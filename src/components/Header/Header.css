@@ -1,0 +1,66 @@
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #002f34;
+}
+
+.HeaderLeft{
+    margin-left: 50px;
+}
+
+.Logo{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 55px;
+    height: 55px;
+}
+
+.HeaderCenter{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    width: 60%;
+}
+
+.CenterSearch{
+    width: 100%;
+    border: none;
+    padding: 10px;
+}
+
+.CenterLocalization{
+    width: 20%;
+    border: none;
+    padding: 10px;
+}
+
+.Icon{
+    background: white;
+    padding: 10px;
+
+}
+
+.HeaderRight{
+    display: flex;
+    align-items: center;
+}
+
+.HeaderRightSell{
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    color: #002f34;
+    background: white;
+}
+.HeaderRightLogin{
+    margin-right: 20px;
+    color: white;
+}
+
+.User{
+    margin-right: 20px;
+    color: white;
+    width: 35px;
+    height: 35px;
+}

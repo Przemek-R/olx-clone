@@ -5,7 +5,7 @@ function Registration() {
     return (
         <div className={"Registration"}>
             <form className={"RegistrationForm"}>
-                <h4>REJESTRACJA</h4>
+                <h4 className={"RegistrationMain"}>REJESTRACJA</h4>
                 <label>Imię</label>
                 <input type={"text"} placeholder={"Wpisz swoje imię"}/>
                 <label>Email</label>

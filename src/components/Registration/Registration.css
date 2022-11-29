@@ -1,0 +1,30 @@
+.RegistrationForm {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    background-color: #002f34;
+    color: white;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    border-radius: 10%;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    border-radius: 5%;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 10%;
+}
+
+h4 {
+    font-family: "Lucida Console";
+    font-size: 30px;
+}

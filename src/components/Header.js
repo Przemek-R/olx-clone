@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "../img/olx-logo.svg";
+import Logo2 from "../img/olx-logo2.svg";
 import {FaMapMarkerAlt, FaSearch, FaUserCircle} from 'react-icons/fa';
 
 import '../styles/Header.css';
@@ -9,7 +9,7 @@ class Header extends React.Component {
         return (
             <div className={"Header"}>
                 <div className={"HeaderLeft"}>
-                    <img src={Logo} className={"Logo"}/>
+                    <img src={Logo2} className={"Logo"}/>
                 </div>
                 <div className={"HeaderCenter"}>
                     <FaSearch className={"Icon"}/>

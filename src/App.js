@@ -5,6 +5,7 @@ import Registration from './components/Registration';
 import Login from './components/Login';
 import Footer from "./components/Footer";
 import Categories from "./components/Categories";
+import AddAdv from "./components/AddAdv";
 
 function App() {
   return (
@@ -22,6 +23,12 @@ function App() {
           <Route path={"/categories"}>
             <Header />
             <Categories />
+            <Footer />
+          </Route>
+
+          <Route path={"/add-advertisement"}>
+            <Header />
+            <AddAdv />
             <Footer />
           </Route>
 

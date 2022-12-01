@@ -17,10 +17,31 @@ class Header extends React.Component {
                     <FaSearch className={"Icon"}/>
                     <input type={"text"} placeholder={"Szukaj"} className={"CenterSearch"}/>
                     <FaMapMarkerAlt className={"Icon"}/>
-                    <input type={"text"} placeholder={"Lokalizacja"} className={"CenterLocalization"}/>
+                    <input list={"localization"} type={"text"} placeholder={"Lokalizacja"} className={"CenterLocalization"}/>
+                    <datalist id={"localization"}>
+                        <option value={"Cała Polska"}></option>
+                        <option value={"Dolnośląskie"}></option>
+                        <option value={"Kujawsko-pomorskie"}></option>
+                        <option value={"Lubelskie"}></option>
+                        <option value={"Lubuskie"}></option>
+                        <option value={"Łódzkie"}></option>
+                        <option value={"Małopolskie"}></option>
+                        <option value={"Mazowieckie"}></option>
+                        <option value={"Opolskie"}></option>
+                        <option value={"Podkarpackie"}></option>
+                        <option value={"Podlaskie"}></option>
+                        <option value={"Pomorskie"}></option>
+                        <option value={"Śląskie"}></option>
+                        <option value={"Świętokrzyskie"}></option>
+                        <option value={"Warmińsko-mazurskie"}></option>
+                        <option value={"Wielkopolskie"}></option>
+                        <option value={"Zachodniopomorskie"}></option>
+                    </datalist>
                 </div>
                 <div className={"HeaderRight"}>
+                    <a href={"/add-advertisement"}>
                     <button className={"HeaderRightSell"}>DODAJ OGŁOSZENIE</button>
+                    </a>
                     <a href={"/login"}>
                     <h4 className={"HeaderRightLogin"}>Logowanie</h4>
                     </a>

@@ -12,6 +12,7 @@ class Login extends React.Component {
                     <label>Hasło</label>
                     <input type={"password"} placeholder={"Podaj hasło"}/>
                     <button>ZALOGUJ SIĘ</button>
+                    <text>Nie masz jeszcze konta? <a href={"/registration"}>Zarejestruj się</a></text>
                 </form>
             </div>
         );

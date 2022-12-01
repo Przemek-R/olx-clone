@@ -9,7 +9,9 @@ class Header extends React.Component {
         return (
             <div className={"Header"}>
                 <div className={"HeaderLeft"}>
+                    <a href={"/"}>
                     <img src={Logo2} className={"Logo"}/>
+                    </a>
                 </div>
                 <div className={"HeaderCenter"}>
                     <FaSearch className={"Icon"}/>
@@ -19,8 +21,12 @@ class Header extends React.Component {
                 </div>
                 <div className={"HeaderRight"}>
                     <button className={"HeaderRightSell"}>DODAJ OGŁOSZENIE</button>
+                    <a href={"/login"}>
                     <h4 className={"HeaderRightLogin"}>Logowanie</h4>
+                    </a>
+                    <a href={"/profile"}>
                     <FaUserCircle className={"User"}/>
+                    </a>
                 </div>
             </div>
         )

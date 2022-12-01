@@ -11,12 +11,6 @@ function App() {
       <Router className={"App"}>
         <Switch>
 
-          <Route path={"/"}>
-            <Header />
-            <Categories />
-            <Footer />
-          </Route>
-
           <Route path={"/login"}>
             <Login />
           </Route>
@@ -26,6 +20,12 @@ function App() {
           </Route>
 
           <Route path={"/categories"}>
+            <Header />
+            <Categories />
+            <Footer />
+          </Route>
+
+          <Route path={"/"}>
             <Header />
             <Categories />
             <Footer />

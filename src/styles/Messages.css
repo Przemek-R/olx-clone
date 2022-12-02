@@ -1,0 +1,44 @@
+* {
+    margin:0;
+}
+
+.messages-container{
+    min-height: 80vh;
+    background-color: rgb(242, 244, 245);
+}
+
+.messages-menu{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    margin: 0px auto;
+    padding-top: 48px;
+}
+
+.messages-h3{
+    line-height: 26px;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(0, 47, 52);
+    margin: 0px 10% 30px;
+}
+
+.messages-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0px 10% 30px;
+    padding-bottom: 15px;
+    padding-left: 0;
+}
+
+.messages-list-elem{
+    position: relative;
+    margin-right: 50px;
+}
+
+.messages-menu-2{
+    width: 100%;
+    align-items: center;
+}

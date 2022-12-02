@@ -45,7 +45,7 @@ class Header extends React.Component {
                     <a href={"/login"}>
                     <h4 className={"HeaderRightLogin"}>Logowanie</h4>
                     </a>
-                    <a href={"/profile"}>
+                    <a href={"/ads"}>
                     <FaUserCircle className={"User"}/>
                     </a>
                 </div>

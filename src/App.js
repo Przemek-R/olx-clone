@@ -5,6 +5,9 @@ import Registration from './components/Registration';
 import Login from './components/Login';
 import Footer from "./components/Footer";
 import Categories from "./components/Categories";
+import Ads from "./components/Ads";
+import Messages from "./components/Messages";
+import Settings from "./components/Settings";
 import AddAdv from "./components/AddAdv";
 
 function App() {
@@ -29,6 +32,24 @@ function App() {
           <Route path={"/add-advertisement"}>
             <Header />
             <AddAdv />
+            <Footer />
+          </Route>
+
+          <Route path={"/ads"}>
+            <Header />
+            <Ads />
+            <Footer />
+          </Route>
+
+          <Route path={"/messages"}>
+            <Header />
+            <Messages />
+            <Footer />
+          </Route>
+
+          <Route path={"/settings"}>
+            <Header />
+            <Settings />
             <Footer />
           </Route>
 

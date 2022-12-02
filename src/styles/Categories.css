@@ -3,6 +3,7 @@
 }
 
 .categories-container{
+    min-height: 80vh;
     min-width: 1600px;
     background: #fff;
     padding-top: 56px;

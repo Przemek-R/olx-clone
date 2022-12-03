@@ -40,12 +40,12 @@ class Header extends React.Component {
                 </div>
                 <div className={"HeaderRight"}>
                     <a href={"/add-advertisement"}>
-                    <button className={"HeaderRightSell"}>DODAJ OGŁOSZENIE</button>
+                    <button className={"HeaderRightSell"}>Dodaj ogłoszenie</button>
                     </a>
                     <a href={"/login"}>
                     <h4 className={"HeaderRightLogin"}>Logowanie</h4>
                     </a>
-                    <a href={"/settings"}>
+                    <a href={"/ads"}>
                     <FaUserCircle className={"User"}/>
                     </a>
                 </div>

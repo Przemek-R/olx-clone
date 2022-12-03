@@ -10,7 +10,9 @@ class Footer extends React.Component {
                 <div className={"footer-part-1"}>
                 </div>
                 <div className={"footer-part-2"}>
+                    <a href={"/"}>
                     <img className={"footer-part-2-image"} src={logo} alt="OLX LOGO" />
+                    </a>
                     <div className={"footer-part-2-description"}>
                         <p>OLX.pl to darmowe ogłoszenia lokalne w kategoriach: Moda, Zwierzęta, Dla Dzieci, Sport i Hobby, Muzyka i Edukacja. Szybko znajdziesz tu ciekawe
                             ogłoszenia i łatwo skontaktujesz się z ogłoszeniodawcą. Na OLX.pl czeka na Ciebie praca biurowa, mieszkania, pokoje, samochody. Jeśli chcesz coś sprzedać - w

@@ -5,13 +5,15 @@ import '../styles/AddAdv.css';
 class AddAdv extends React.Component {
     render() {
         return (
-            <div className={"AddAdv"}>
-            <h1 className={"Title"}> Dodaj ogłoszenie</h1>
-                <div className={"Info"}>
-                    <h4>Podstawowe informacje</h4>
-                    <text>Tytuł ogłoszenia</text>
-                    <input placeholder={"np. Ursus C330"}/>
-                    <text>Kategoria</text>
+            <div className={"add-adv-container"}>
+                <div className={"add-adv-menu"}>
+                    <h3 className={"add-adv-h3"}>Dodaj ogłoszenie</h3>
+                </div>
+                <div className={"add-adv-data"}>
+                    <h4 className={"add-adv-h4"}>Podstawowe informacje</h4>
+                    <text className={"add-adv-t"}>Tytuł ogłoszenia</text>
+                    <input className={"add-adv-input"} type={"text"}/>
+                    <text className={"add-adv-t"}>Kategoria</text>
                     <select>
                         <option value={""}>Wybierz kategorię</option>
                         <option value={"0"}>Motoryzacja</option>
@@ -25,31 +27,27 @@ class AddAdv extends React.Component {
                         <option value={"8"}>Dla dzieci</option>
                     </select>
                 </div>
-                <div className={"Photos"}>
-                    <h4>Zdjęcia</h4>
-                    <text>Dodaj zdjęcia, które przedstawiają sprzedawany przedmiot</text>
-                    <input type={"file"} id={"addphoto"} name={"addphoto"}/>
+                <div className={"add-adv-photo"}>
+                    <h4 className={"add-adv-h4-photo"}>Zdjęcia</h4>
+                    <text className={"add-adv-t"}>Dodaj zdjęcia, które przedstawiają sprzedawany przedmiot</text>
+                    <input type={"file"}/>
                 </div>
-                <div className={"Description"}>
-                    <text>Opis</text>
+                <div className={"add-adv-description"}>
+                    <h4 className={"add-adv-h4"}>Opis</h4>
                     <textarea placeholder={"Podaj dokładniejsze informacje na temat sprzedawanego przedmiotu"} type={"text"}/>
                 </div>
-                <div className={"Localization"}>
-                    <text>Lokalizacja</text>
-                    <input placeholder={"Miejscowość lub kod pocztowy"} type={"text"}/>
+                <div className={"add-adv-localization"}>
+                    <h4 className={"add-adv-h4"}>Lokalizacja</h4>
+                    <input className={"add-adv-input"} placeholder={"Miejscowość lub kod pocztowy"} type={"text"}/>
                 </div>
-                <div className={"Contact"}>
-                    <h4>Dane kontaktowe</h4>
-                    <text>Adres e-mail</text>
-                    <input placeholder={"Podaj adres email"} type={"text"}/>
-                    <text>Numer telefonu</text>
-                    <input placeholder={"Podaj numer telefonu"} type={"text"}/>
+                <div className={"add-adv-contact"}>
+                    <h4 className={"add-adv-h4"}>Dane kontaktowe</h4>
+                    <text className={"add-adv-t"}>Adres e-mail</text>
+                    <input className={"add-adv-input"} placeholder={"Podaj adres email"} type={"text"}/>
+                    <text className={"add-adv-t"}>Numer telefonu</text>
+                    <input className={"add-adv-input"} placeholder={"Podaj numer telefonu"} type={"text"}/>
                 </div>
-                <div className={"Add"}>
-                    <a href={"/"}>
-                    <button className={"AddButton"}>Dodaj ogłoszenie</button>
-                    </a>
-                </div>
+                 <button className={"add-adv-button-add"}>Dodaj ogłoszenie</button>
             </div>
         )
     }

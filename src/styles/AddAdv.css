@@ -1,144 +1,137 @@
-.AddAdv {
-    background: #edf7fa;
+* {
+    margin:0;
 }
 
-.Info {
+.add-adv-container{
+    background-color: rgb(242, 244, 245);
+}
+
+.add-adv-menu{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    margin: 0px auto;
+    padding-top: 48px;
+}
+
+.add-adv-h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(0, 47, 52);
+    padding-bottom: 50px;
+    margin: 0px 10% 30px;
+}
+
+.add-adv-data{
+    width: 100%;
+    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    background-color: white;
-    margin-top: 3%;
+}
+
+.add-adv-h4{
+    margin-top: 1%;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-bottom: 25px;
+    font-size: 20px;
 }
 
-.Info h4 {
+.add-adv-h4-photo{
     margin-top: 1%;
-    margin-left: 1%;
-    font-size: larger;
-}
-
-.Info text{
-    margin-top: 1%;
-    margin-left: 1%;
-}
-
-.Info input {
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 70%;
-}
-
-.Info select {
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 85%;
-    margin-bottom: 0.5%;
-}
-
-.Photos {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin-top: 2%;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-bottom: 3px;
+    font-size: 20px;
 }
 
-.Photos h4 {
-    margin-top: 1%;
-    margin-left: 1%;
-    font-size: larger;
-}
-
-.Photos text {
-    margin-top: 1%;
-    margin-left: 1%;
-}
-
-.Photos input {
-    margin-top: 1%;
-    margin-left: 1%;
-}
-
-.Description {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.Description text {
-    margin-top: 1%;
-    margin-left: 1%;
-}
-
-.Description textarea {
-    margin: 1%;
-    height: 200px;
-    border-radius: 0%;
-}
-
-.Localization {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.Localization text {
-    margin-top: 1%;
-    margin-left: 1%;
-}
-
-.Localization input {
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-.Contact {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.Contact text {
-    margin-top: 1%;
-    margin-left: 1%;
-}
-
-.Contact input {
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 80%;
-}
-
-.Contact h4 {
-    margin-top: 1%;
-    margin-left: 1%;
-    font-size: larger;
-}
-
-.Add {
-    margin-left: 75%;
-}
-
-.Title {
+.add-adv-t{
+    font-size: 14px;
     margin-left: 10%;
 }
 
-.AddButton {
-    background-color: #002f34;
-    color: white;
+.add-adv-input{
+    outline: 0;
     border: none;
+    color: #002f34;
+    background: #f2f4f5;
+    margin-left: 10%;
+    margin-bottom: 1%;
     height: 40px;
-    width: 250px;
-    font-size: large;
+    width: 300px;
+}
+
+.add-adv-data select{
+    outline: 0;
+    border: none;
+    color: #002f34;
+    background: #f2f4f5;
+    margin-left: 10%;
+    height: 40px;
+    width: 305px;
+    margin-top: 0.2%;
+    margin-bottom: 1%;
+}
+
+.add-adv-photo{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.add-adv-photo input{
+    margin-left: 10%;
+    margin-top: 25px;
+}
+
+.add-adv-description{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.add-adv-description textarea{
+    outline: 0;
+    border: none;
+    color: #002f34;
+    background: #f2f4f5;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    width: 600px;
+    height: 200px;
+}
+
+.add-adv-localization{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.add-adv-contact{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.add-adv-button-add{
+    align-items: center;
+    cursor: pointer;
+    min-height: 40px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: rgb(0, 47, 52);
+    border: 5px solid rgb(0, 47, 52);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    padding: 3px 22px;
+    width: 170px;
+    margin-left: 10%;
 }

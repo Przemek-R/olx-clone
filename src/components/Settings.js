@@ -29,6 +29,32 @@ class Settings extends React.Component {
                         </li>
                     </ul>
                 </div>
+                <div className={"settings-data"}>
+                    <h4 className={"settings-h4"}>Zmień dane kontaktowe</h4>
+                    <text className={"settings-t"}>Kod lub miejscowość</text>
+                    <input className={"settings-input"} type={"text"}/>
+                    <text className={"settings-t"}>Osoba kontaktowa</text>
+                    <input className={"settings-input"} type={"text"}/>
+                    <text className={"settings-t"}>Numer telefonu</text>
+                    <input className={"settings-input"} type={"text"}/>
+                    <button className={"settings-button"}>Zapisz</button>
+                </div>
+                <div className={"settings-password"}>
+                    <h4 className={"settings-h4"}>Zmień hasło</h4>
+                    <text className={"settings-t"}>Obecne hasło</text>
+                    <input className={"settings-input"} type={"text"}/>
+                    <text className={"settings-t"}>Nowe hasło</text>
+                    <input className={"settings-input"} type={"text"}/>
+                    <button className={"settings-button"}>Zmień hasło</button>
+                </div>
+                <div className={"settings-email"}>
+                    <h4 className={"settings-h4"}>Zmień e-mail</h4>
+                    <text className={"settings-t"}>Nowy e-mail</text>
+                    <input className={"settings-input"} type={"text"}/>
+                    <button className={"settings-button"}>Zapisz</button>
+                </div>
+                <div className={"settings-space"}>
+                </div>
             </div>
         );
     }

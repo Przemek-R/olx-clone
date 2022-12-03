@@ -37,14 +37,12 @@ function App() {
 
           <Route path={"/ads"}>
             <Header />
-            <Settings />
             <Ads />
             <Footer />
           </Route>
 
           <Route path={"/messages"}>
             <Header />
-            <Settings />
             <Messages />
             <Footer />
           </Route>

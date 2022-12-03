@@ -1,66 +1,71 @@
-/** {*/
-/*    margin:0;*/
-/*}*/
+* {
+    margin:0;
+}
 
-/*.ads-container{*/
-/*    min-height: 80vh;*/
-/*    background-color: rgb(242, 244, 245);*/
-/*}*/
+.ads-container{
+    min-height: 80vh;
+    background-color: rgb(242, 244, 245);
+}
 
-/*.ads-menu{*/
-/*    width: 100%;*/
-/*    background: rgb(255, 255, 255);*/
-/*    margin: 0px auto;*/
-/*    padding-top: 48px;*/
-/*}*/
+.ads-menu{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    margin: 0px auto;
+    padding-top: 48px;
+}
 
-/*.ads-h3{*/
-/*    line-height: 26px;*/
-/*    font-size: 32px;*/
-/*    font-weight: 700;*/
-/*    color: rgb(0, 47, 52);*/
-/*    margin: 0px 10% 30px;*/
-/*}*/
+.ads-h3{
+    line-height: 26px;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(0, 47, 52);
+    margin: 0px 10% 30px;
+}
 
-/*.ads-list{*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    list-style: none;*/
-/*    font-weight: bold;*/
-/*    font-size: 16px;*/
-/*    margin: 0px 10% 30px;*/
-/*    padding-bottom: 15px;*/
-/*    padding-left: 0;*/
-/*}*/
+.ads-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0px 10% 30px;
+    padding-bottom: 15px;
+    padding-left: 0;
+}
 
-/*.ads-list-elem{*/
-/*    position: relative;*/
-/*    margin-right: 50px;*/
-/*}*/
+.ads-list-elem{
+    position: relative;
+    margin-right: 50px;
+}
 
-/*.ads-menu-2{*/
-/*    width: 100%;*/
-/*    align-items: center;*/
-/*}*/
+.ads-menu-2{
+    width: 100%;
+    align-items: center;
+}
 
-/*ads-add-menu{*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    text-align: center;*/
-/*}*/
+ads-add-menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 
-/*.ads-add{*/
-/*    align-items: center;*/
-/*    cursor: pointer;*/
-/*    min-height: 40px;*/
-/*    position: relative;*/
-/*    text-decoration: none;*/
-/*    font-weight: 700;*/
-/*    font-size: 14px;*/
-/*    line-height: 20px;*/
-/*    background-color: rgb(0, 47, 52);*/
-/*    border: 5px solid rgb(0, 47, 52);*/
-/*    border-radius: 4px;*/
-/*    color: rgb(255, 255, 255);*/
-/*    padding: 3px 22px;*/
-/*}*/
+.ads-add{
+    margin-left: 10%;
+}
+
+.ads-add-button{
+    align-items: center;
+    cursor: pointer;
+    min-height: 40px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: rgb(0, 47, 52);
+    border: 5px solid rgb(0, 47, 52);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    padding: 3px 22px;
+    width: 170px;
+}

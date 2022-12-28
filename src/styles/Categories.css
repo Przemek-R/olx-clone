@@ -58,14 +58,12 @@
     line-height: 1.25;
 }
 
-.link {
-    color: #002f34;
-}
-
 .a{
     outline: none;
+    color: #002f34;
 }
 
 a, a:visited {
     text-decoration: none;
+    color: #002f34;
 }

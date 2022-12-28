@@ -33,7 +33,12 @@ button {
     font-size: 30px;
 }
 
-a:visited
-{
-    color: lavender;
+.a{
+    outline: none;
+    color: white;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
 }

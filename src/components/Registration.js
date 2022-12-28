@@ -10,11 +10,11 @@ class Registration extends React.Component {
                     <label>Imię</label>
                     <input type={"text"} placeholder={"Wpisz swoje imię"}/>
                     <label>Email</label>
-                    <input type={"text"} placeholder={"Wpisz swój email"}/>
+                    <input type={"text"} placeholder={"Wpisz swój e-mail"}/>
                     <label>Hasło</label>
-                    <input type={"password"} placeholder={"Podaj hasło"}/>
+                    <input type={"password"} placeholder={"Wpisz hasło"}/>
                     <label>Zweryfikuj hasło</label>
-                    <input type={"password"} placeholder={"Podaj ponownie hasło"}/>
+                    <input type={"password"} placeholder={"Wpisz ponownie hasło"}/>
                     <button>ZAREJESTRUJ SIĘ</button>
                 </form>
             </div>

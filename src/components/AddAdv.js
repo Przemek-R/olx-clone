@@ -49,7 +49,7 @@ class AddAdv extends React.Component {
                 </div>
                  <button className={"add-adv-button-add"}>Dodaj ogłoszenie</button>
             </div>
-        )
+        );
     }
 }
 export default AddAdv;

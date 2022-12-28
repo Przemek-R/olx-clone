@@ -42,28 +42,25 @@ class Footer extends React.Component {
                 <div className={"footer-part-3"}>
                     <div className={"footer-part-3-list"}>
                         <ul>
-                            <li>Text 1</li>
-                            <li>Text 2</li>
-                            <li>Text 3</li>
-                            <li>Text 4</li>
+                            <li>Motoryzacja</li>
+                            <li>Nieruchomości</li>
+                            <li>Praca</li>
                          </ul>
                         <ul>
-                            <li>Text 1</li>
-                            <li>Text 2</li>
-                            <li>Text 3</li>
-                            <li>Text 4</li>
+                            <li>Dom i Ogród</li>
+                            <li>Elektronika</li>
+                            <li>Moda</li>
+
                         </ul>
                         <ul>
-                            <li>Text 1</li>
-                            <li>Text 2</li>
-                            <li>Text 3</li>
-                            <li>Text 4</li>
+                            <li>Rolnictwo</li>
+                            <li>Zwierzęta</li>
+                            <li>Dla Dzieci</li>
                         </ul>
                         <ul>
-                            <li>Text 1</li>
-                            <li>Text 2</li>
-                            <li>Text 3</li>
-                            <li>Text 4</li>
+                            <li>O nas</li>
+                            <li>Kontakt</li>
+                            <li>Pomoc</li>
                         </ul>
                     </div>
                 </div>

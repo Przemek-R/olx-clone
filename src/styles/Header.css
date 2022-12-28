@@ -78,3 +78,8 @@
     width: 35px;
     height: 35px;
 }
+
+.HeaderRight a, .HeaderRight a:visited {
+    outline: none;
+    text-decoration: none;
+}

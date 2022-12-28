@@ -69,3 +69,9 @@ ads-add-menu{
     padding: 3px 22px;
     width: 170px;
 }
+
+.ads-container a, .ads-container a:visited {
+    outline: none;
+    text-decoration: none;
+    color: #002f34;
+}

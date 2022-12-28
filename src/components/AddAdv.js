@@ -46,8 +46,8 @@ class AddAdv extends React.Component {
                     <input className={"add-adv-input"} placeholder={"Podaj adres email"} type={"text"}/>
                     <text className={"add-adv-t"}>Numer telefonu</text>
                     <input className={"add-adv-input"} placeholder={"Podaj numer telefonu"} type={"text"}/>
+                    <button className={"add-adv-button-add"}>Dodaj ogłoszenie</button>
                 </div>
-                 <button className={"add-adv-button-add"}>Dodaj ogłoszenie</button>
                 <div className={"add-adv-space"}>
                 </div>
             </div>

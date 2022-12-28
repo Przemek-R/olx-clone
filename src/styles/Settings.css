@@ -115,3 +115,9 @@
     flex-direction: column;
     margin-top: 30px;
 }
+
+.settings-container a, .settings-container a:visited {
+    outline: none;
+    text-decoration: none;
+    color: #002f34;
+}

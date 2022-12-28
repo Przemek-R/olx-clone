@@ -42,3 +42,9 @@
     width: 100%;
     align-items: center;
 }
+
+.messages-container a, .messages-container a:visited {
+    outline: none;
+    text-decoration: none;
+    color: #002f34;
+}

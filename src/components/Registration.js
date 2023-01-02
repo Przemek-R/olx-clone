@@ -9,6 +9,8 @@ class Registration extends React.Component {
                     <h4 className={"RegistrationMain"}>REJESTRACJA</h4>
                     <label>Imię</label>
                     <input type={"text"} placeholder={"Wpisz swoje imię"}/>
+                    <label>Nazwisko</label>
+                    <input type={"text"} placeholder={"Wpisz swoje nazwisko"}/>
                     <label>Email</label>
                     <input type={"text"} placeholder={"Wpisz swój e-mail"}/>
                     <label>Hasło</label>

@@ -38,7 +38,7 @@ class AddAdv extends React.Component {
                 </div>
                 <div className={"add-adv-localization"}>
                     <h4 className={"add-adv-h4"}>Lokalizacja</h4>
-                    <input className={"add-adv-input"} placeholder={"Miejscowość lub kod pocztowy"} type={"text"}/>
+                    <input className={"add-adv-input"} placeholder={"Miejscowość"} type={"text"}/>
                 </div>
                 <div className={"add-adv-contact"}>
                     <h4 className={"add-adv-h4"}>Dane kontaktowe</h4>

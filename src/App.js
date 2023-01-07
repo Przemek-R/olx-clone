@@ -10,7 +10,7 @@ import Messages from "./components/Messages";
 import Settings from "./components/Settings";
 import AddAdv from "./components/AddAdv";
 
-function App() {
+export default function App() {
   return (
       <Router className={"App"}>
         <Switch>
@@ -63,4 +63,3 @@ function App() {
       </Router>
   );
 }
-export default App;

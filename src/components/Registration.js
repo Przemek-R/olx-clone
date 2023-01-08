@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Alert } from 'react-native';
 import axios from 'axios';
 import '../styles/Registration.css';
 
@@ -8,24 +9,78 @@ export default function Registration() {
     const [email, setEmail] = useState("")
     const [phone, setPhone] = useState("")
     const [password, setPassword] = useState("")
-    const [password2, setPassword2] = useState("")
+    const [confirmPassword, setconfirmPassword] = useState("")
+    const [error, setError] = useState(null)
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        axios.post('http://localhost:3001/register', {
-            username,
-            surname,
-            password,
-            email,
-            phone
-        })
-            .then(response => {
-                console.log(response);
-            })
-            .catch(error => {
-                console.error("Błąd: " + error.message);
-            });
+    function validateForm() {
+
+            if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(email)) {
+                setError('Niepoprawny adres email');
+                return false;
+            }
+
+            if (phone.length < 9 && phone.length > 12)
+            {
+                setError('Niepoprawny numer telefonu');
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                setError('Hasła nie są takie same');
+                return false;
+            }
+
+            if (password.length < 8) {
+                setError('Hasło musi mieć co najmniej 8 znaków');
+                return false;
+            }
+
+            if (!/\d/.test(password)) {
+                setError('Hasło musi zawierać co najmniej jedną cyfrę');
+                return false;
+            }
+
+            if (!/[a-z]/.test(password)) {
+                setError('Hasło musi zawierać co najmniej jedną małą literę');
+                return false;
+            }
+
+            if (!/[A-Z]/.test(password)) {
+                setError('Hasło musi zawierać co najmniej jedną dużą literę');
+                return false;
+            }
+
+            if (!/[!@#$%^&*.]/.test(password)) {
+                setError('Hasło musi zawierać co najmniej jeden znak specjalny');
+                return false;
+
+        }
+        return true;
     }
+
+        function handleSubmit(event) {
+        event.preventDefault();
+        if (validateForm()){
+            axios.post('http://localhost:3001/register', {
+                username,
+                surname,
+                password,
+                email,
+                phone
+            })
+                .then(response => {
+                    Alert.alert("Zarejestrowano pomyślnie")
+                    window.location.replace('http://localhost:3000/login')
+                    console.log(response);
+                })
+                .catch(error => {
+                    console.error("Błąd: " + error.message);
+                });
+        } else {
+            console.error(error)
+        }
+    }
+
     return (
         <div className={"Registration"}>
             <form onSubmit={handleSubmit} className={"RegistrationForm"}>
@@ -59,7 +114,7 @@ export default function Registration() {
                     type={"numeric"}
                     value={phone}
                     onChange={event => setPhone(event.target.value)}
-                    placeholder={"Wpisz swój nr. telefonu"}
+                    placeholder={"Wpisz swój nr telefonu"}
                     required
                 />
                 <label>Hasło</label>
@@ -73,8 +128,8 @@ export default function Registration() {
                 <label>Powtórz hasło</label>
                 <input
                     type={"password"}
-                    value={password2}
-                    onChange={event => setPassword2(event.target.value)}
+                    value={confirmPassword}
+                    onChange={event => setconfirmPassword(event.target.value)}
                     placeholder={"Wpisz ponownie hasło"}
                     required
                 />

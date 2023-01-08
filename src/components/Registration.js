@@ -12,12 +12,12 @@ export default function Registration() {
 
     function handleSubmit(event) {
         event.preventDefault();
-        axios.post('olx-clone-api/register', {
+        axios.post('http://localhost:3001/register', {
             username,
             surname,
+            password,
             email,
-            phone,
-            password
+            phone
         })
             .then(response => {
                 console.log(response);

@@ -9,7 +9,7 @@ export default function Registration() {
     const [email, setEmail] = useState("")
     const [phone, setPhone] = useState("")
     const [password, setPassword] = useState("")
-    const [confirmPassword, setconfirmPassword] = useState("")
+    const [confirmPassword, setConfirmPassword] = useState("")
     const [error, setError] = useState(null)
 
     function validateForm() {
@@ -129,7 +129,7 @@ export default function Registration() {
                 <input
                     type={"password"}
                     value={confirmPassword}
-                    onChange={event => setconfirmPassword(event.target.value)}
+                    onChange={event => setConfirmPassword(event.target.value)}
                     placeholder={"Wpisz ponownie hasło"}
                     required
                 />
@@ -138,20 +138,3 @@ export default function Registration() {
         </div>
     );
 }
-
-// function newUser(username, surname, email, phone, password) {
-//     console.log("Tworzenie konta: " + email)
-//
-//     axios.post(`http://localhost:3001/models/register`, {
-//         "username": username,
-//         "surname": surname,
-//         "email": email,
-//         "phone": phone,
-//         "password": password
-//     }).then(() => {
-//         alert("Rejestracja przebiegła pomyślnie")
-//     }).catch((err) => {
-//         console.log('Error:' + err.message)
-//         alert("Nieprawidłowe dane")
-//     })
-// }

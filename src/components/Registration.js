@@ -9,77 +9,94 @@ export default function Registration() {
     const [phone, setPhone] = useState("")
     const [password, setPassword] = useState("")
     const [password2, setPassword2] = useState("")
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        axios.post('olx-clone-api/register', {
+            username,
+            surname,
+            email,
+            phone,
+            password
+        })
+            .then(response => {
+                console.log(response);
+            })
+            .catch(error => {
+                console.error("Błąd: " + error.message);
+            });
+    }
     return (
         <div className={"Registration"}>
-            <form id={"RegistrationForm"} className={"RegistrationForm"}>
+            <form onSubmit={handleSubmit} className={"RegistrationForm"}>
                 <h4 className={"RegistrationMain"}>REJESTRACJA</h4>
                 <label>Imię</label>
                 <input
                     type={"text"}
-                    name={"username"}
-                    onChange={setUsername}
+                    value={username}
+                    onChange={event => setUsername(event.target.value)}
                     placeholder={"Wpisz swoje imię"}
                     required
                 />
                 <label>Nazwisko</label>
                 <input
                     type={"text"}
-                    name={"surname"}
-                    onChange={setSurname}
+                    value={surname}
+                    onChange={event => setSurname(event.target.value)}
                     placeholder={"Wpisz swoje nazwisko"}
                     required
                 />
                 <label>Email</label>
                 <input
                     type={"text"}
-                    name={"email"}
-                    onChange={setEmail}
+                    value={email}
+                    onChange={event => setEmail(event.target.value)}
                     placeholder={"Wpisz swój e-mail"}
                     required
                 />
                 <label>Telefon</label>
                 <input
                     type={"numeric"}
-                    name={"phone"}
-                    onChange={setPhone}
+                    value={phone}
+                    onChange={event => setPhone(event.target.value)}
                     placeholder={"Wpisz swój nr. telefonu"}
                     required
                 />
                 <label>Hasło</label>
                 <input
                     type={"password"}
-                    name={"password"}
-                    onChange={setPassword}
+                    value={password}
+                    onChange={event => setPassword(event.target.value)}
                     placeholder={"Wpisz hasło"}
                     required
                 />
                 <label>Powtórz hasło</label>
                 <input
                     type={"password"}
-                    name={"password2"}
-                    onChange={setPassword2}
+                    value={password2}
+                    onChange={event => setPassword2(event.target.value)}
                     placeholder={"Wpisz ponownie hasło"}
                     required
                 />
-                <button onClick={() => newUser(username, surname, email, phone, password)} className={"reg-button"} type={"submit"}>ZAREJESTRUJ SIĘ</button>
+                <button className={"reg-button"} type={"submit"}>ZAREJESTRUJ SIĘ</button>
             </form>
         </div>
     );
 }
 
-function newUser(username, surname, email, phone, password) {
-    console.log("Tworzenie konta: " + email)
-
-    axios.post(`http://localhost:3001/models/register`, {
-        "username": username,
-        "surname": surname,
-        "email": email,
-        "phone": phone,
-        "password": password
-    }).then(() => {
-        alert("Rejestracja przebiegła pomyślnie")
-    }).catch((err) => {
-        console.log('Error:' + err.message)
-        alert("Nieprawidłowe dane")
-    })
-}
+// function newUser(username, surname, email, phone, password) {
+//     console.log("Tworzenie konta: " + email)
+//
+//     axios.post(`http://localhost:3001/models/register`, {
+//         "username": username,
+//         "surname": surname,
+//         "email": email,
+//         "phone": phone,
+//         "password": password
+//     }).then(() => {
+//         alert("Rejestracja przebiegła pomyślnie")
+//     }).catch((err) => {
+//         console.log('Error:' + err.message)
+//         alert("Nieprawidłowe dane")
+//     })
+// }

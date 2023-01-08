@@ -16,42 +16,48 @@ export default function Registration() {
                 <label>Imię</label>
                 <input
                     type={"text"}
-                    onChangeText={setUsername}
+                    name={"username"}
+                    onChange={setUsername}
                     placeholder={"Wpisz swoje imię"}
                     required
                 />
                 <label>Nazwisko</label>
                 <input
                     type={"text"}
-                    onChangeText={setSurname}
+                    name={"surname"}
+                    onChange={setSurname}
                     placeholder={"Wpisz swoje nazwisko"}
                     required
                 />
                 <label>Email</label>
                 <input
                     type={"text"}
-                    onChangeText={setEmail}
+                    name={"email"}
+                    onChange={setEmail}
                     placeholder={"Wpisz swój e-mail"}
                     required
                 />
                 <label>Telefon</label>
                 <input
                     type={"numeric"}
-                    onChangeText={setPhone}
+                    name={"phone"}
+                    onChange={setPhone}
                     placeholder={"Wpisz swój nr. telefonu"}
                     required
                 />
                 <label>Hasło</label>
                 <input
                     type={"password"}
-                    onChangeText={setPassword}
+                    name={"password"}
+                    onChange={setPassword}
                     placeholder={"Wpisz hasło"}
                     required
                 />
                 <label>Powtórz hasło</label>
                 <input
                     type={"password"}
-                    onChangeText={setPassword2}
+                    name={"password2"}
+                    onChange={setPassword2}
                     placeholder={"Wpisz ponownie hasło"}
                     required
                 />
@@ -64,7 +70,7 @@ export default function Registration() {
 function newUser(username, surname, email, phone, password) {
     console.log("Tworzenie konta: " + email)
 
-    axios.post(`olx-clone-api/modules/register`, {
+    axios.post(`http://localhost:3001/models/register`, {
         "username": username,
         "surname": surname,
         "email": email,
@@ -72,8 +78,8 @@ function newUser(username, surname, email, phone, password) {
         "password": password
     }).then(() => {
         alert("Rejestracja przebiegła pomyślnie")
-    }).catch(err => {
+    }).catch((err) => {
         console.log('Error:' + err.message)
-        alert("Błąd podczas próby rejestracji")
+        alert("Nieprawidłowe dane")
     })
 }

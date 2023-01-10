@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Alert } from 'react-native';
 import axios from 'axios';
 import '../styles/Registration.css';
+import bcrypt from 'bcryptjs';
 
 export default function Registration() {
     const [username, setUsername] = useState("")
@@ -60,17 +60,20 @@ export default function Registration() {
 
         function handleSubmit(event) {
         event.preventDefault();
+
+        const hashedPassword = bcrypt.hashSync(password)
+
         if (validateForm()){
             axios.post('http://localhost:3001/register', {
                 username,
                 surname,
-                password,
+                hashedPassword,
                 email,
                 phone
             })
                 .then(response => {
-                    Alert.alert("Zarejestrowano pomyślnie")
-                    window.location.replace('http://localhost:3000/login')
+                    alert("Zarejestrowano pomyślnie")
+                    window.location.replace('/login')
                     console.log(response);
                 })
                 .catch(error => {

@@ -6,20 +6,27 @@ export default function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    async function handleSubmit(event) {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        await axios.post('http://localhost:3001/login', {
-            email,
-            password
-        })
-            .then(response => {
-                if (response.data.success) {
-                    window.location.replace('/');
+        console.log("Email: ", email, "\nHasło: ", password)
+
+        try {
+            const response = await axios.post('http://localhost:3001/login',
+                JSON.stringify({email, password}),
+                {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json',
+                        'Authorization' : 'Bearer <token_here>'
+                    },
+                    withCredentials: true
                 }
-            })
-            .catch(error => {
-                console.error("Błąd: " + error.message);
-            });
+            );
+            console.log(JSON.stringify(response.data));
+            window.location.replace('/')
+        } catch (error) {
+            console.error("Błąd: " + error.message);
+        }
     }
 
     return (

@@ -12,6 +12,7 @@ import cat8 from '../img/icon-cat8.png'
 import cat9 from '../img/icon-cat9.png'
 
 export default function Categories() {
+
     return (
         <div className={"categories-container"}>
             <div className={"categories-container-wrapper"}>

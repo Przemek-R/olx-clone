@@ -53,12 +53,12 @@ export default function Registration() {
             if (!/[!@#$%^&*.]/.test(password)) {
                 setError('Hasło musi zawierać co najmniej jeden znak specjalny');
                 return false;
-
         }
         return true;
     }
 
-        function handleSubmit(event) {
+    function handleSubmit(event) {
+
         event.preventDefault();
 
         const hashedPassword = bcrypt.hashSync(password)

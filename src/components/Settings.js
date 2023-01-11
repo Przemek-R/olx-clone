@@ -30,9 +30,9 @@ export default function Settings() {
             </div>
             <div className={"settings-data"}>
                 <h4 className={"settings-h4"}>Zmień dane kontaktowe</h4>
-                <text className={"settings-t"}>Kod lub miejscowość</text>
+                <text className={"settings-t"}>Imię</text>
                 <input className={"settings-input"} type={"text"}/>
-                <text className={"settings-t"}>Osoba kontaktowa</text>
+                <text className={"settings-t"}>Nazwisko</text>
                 <input className={"settings-input"} type={"text"}/>
                 <text className={"settings-t"}>Numer telefonu</text>
                 <input className={"settings-input"} type={"text"}/>

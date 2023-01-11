@@ -11,6 +11,7 @@ import Settings from "./components/Settings";
 import AddAdv from "./components/AddAdv";
 
 export default function App() {
+
   return (
       <Router className={"App"}>
         <Switch>

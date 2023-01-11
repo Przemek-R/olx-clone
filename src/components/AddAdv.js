@@ -23,7 +23,7 @@ export default function AddAdv() {
                     <option value={"5"}>Moda</option>
                     <option value={"6"}>Rolnictwo</option>
                     <option value={"7"}>Zwierzęta</option>
-                    <option value={"8"}>Dla dzieci</option>
+                    <option value={"8"}>Dla Dzieci</option>
                 </select>
             </div>
             <div className={"add-adv-photo"}>
@@ -45,6 +45,11 @@ export default function AddAdv() {
                 <input className={"add-adv-input"} placeholder={"Podaj adres email"} type={"text"}/>
                 <text className={"add-adv-t"}>Numer telefonu</text>
                 <input className={"add-adv-input"} placeholder={"Podaj numer telefonu"} type={"text"}/>
+            </div>
+            <div className={"add-adv-price"}>
+                <h4 className={"add-adv-h4"}>Cena przedmiotu</h4>
+                <text className={"add-adv-t"}>Cena</text>
+                <input className={"add-adv-input"} placeholder={"Podaj cenę przedmiotu"} type={"text"}/>
                 <button className={"add-adv-button-add"}>Dodaj ogłoszenie</button>
             </div>
             <div className={"add-adv-space"}>

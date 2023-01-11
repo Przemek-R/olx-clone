@@ -11,91 +11,89 @@ import cat7 from '../img/icon-cat7.png'
 import cat8 from '../img/icon-cat8.png'
 import cat9 from '../img/icon-cat9.png'
 
-class Categories extends React.Component {
-    render() {
-        return (
-            <div className={"categories-container"}>
-                <div className={"categories-container-wrapper"}>
-                    <header>
-                        <h3>Kategorie główne</h3>
-                    </header>
-                    <div className={"categories-container-list"}>
-                        <div className={"list"}>
-                            <div className={"item"}>
-                                <a href="" className={"link-parent"}>
-                                    <span className={"list-text"}>Motoryzacja</span>
-                                    <span><img src={cat1} alt="Motoryzacja"/></span>
-                                </a>
-                            </div>
+export default function Categories() {
+
+    return (
+        <div className={"categories-container"}>
+            <div className={"categories-container-wrapper"}>
+                <header>
+                    <h3>Kategorie główne</h3>
+                </header>
+                <div className={"categories-container-list"}>
+                    <div className={"list"}>
+                        <div className={"item"}>
+                            <a href="" className={"link-parent"}>
+                                <span className={"list-text"}>Motoryzacja</span>
+                                <span><img src={cat1} alt="Motoryzacja"/></span>
+                            </a>
                         </div>
-                        <div className={"list"}>
-                            <div className={"item"}>
-                                <a href="" className={"link-parent"}>
-                                    <span className={"list-text"}>Nieruchomości</span>
-                                    <span><img src={cat2} alt="Nieruchomości"/></span>
-                                </a>
-                            </div>
+                    </div>
+                    <div className={"list"}>
+                        <div className={"item"}>
+                            <a href="" className={"link-parent"}>
+                                <span className={"list-text"}>Nieruchomości</span>
+                                <span><img src={cat2} alt="Nieruchomości"/></span>
+                            </a>
                         </div>
-                        <div className={"list"}>
-                            <div className={"item"}>
-                                <a href="" className={"link-parent"}>
-                                    <span className={"list-text"}>Praca</span>
-                                    <span><img src={cat3} alt="Praca"/></span>
-                                </a>
-                            </div>
+                    </div>
+                    <div className={"list"}>
+                        <div className={"item"}>
+                            <a href="" className={"link-parent"}>
+                                <span className={"list-text"}>Praca</span>
+                                <span><img src={cat3} alt="Praca"/></span>
+                            </a>
                         </div>
-                        <div className={"list"}>
-                            <div className={"item"}>
-                                <a href="" className={"link-parent"}>
-                                    <span className={"list-text"}>Dom i Ogród</span>
-                                    <span><img src={cat4} alt="Dom i Ogród"/></span>
-                                </a>
-                            </div>
+                    </div>
+                    <div className={"list"}>
+                        <div className={"item"}>
+                            <a href="" className={"link-parent"}>
+                                <span className={"list-text"}>Dom i Ogród</span>
+                                <span><img src={cat4} alt="Dom i Ogród"/></span>
+                            </a>
                         </div>
-                        <div className={"list"}>
-                            <div className={"item"}>
-                                <a href="" className={"link-parent"}>
-                                    <span className={"list-text"}>Elektronika</span>
-                                    <span><img src={cat5} alt="Elektronika"/></span>
-                                </a>
-                            </div>
+                    </div>
+                    <div className={"list"}>
+                        <div className={"item"}>
+                            <a href="" className={"link-parent"}>
+                                <span className={"list-text"}>Elektronika</span>
+                                <span><img src={cat5} alt="Elektronika"/></span>
+                            </a>
                         </div>
-                        <div className={"list"}>
-                            <div className={"item"}>
-                                <a href="" className={"link-parent"}>
-                                    <span className={"list-text"}>Moda</span>
-                                    <span><img src={cat6} alt="Moda"/></span>
-                                </a>
-                            </div>
+                    </div>
+                    <div className={"list"}>
+                        <div className={"item"}>
+                            <a href="" className={"link-parent"}>
+                                <span className={"list-text"}>Moda</span>
+                                <span><img src={cat6} alt="Moda"/></span>
+                            </a>
                         </div>
-                        <div className={"list"}>
-                            <div className={"item"}>
-                                <a href="" className={"link-parent"}>
-                                    <span className={"list-text"}>Rolnictwo</span>
-                                    <span><img src={cat7} alt="Rolnictwo"/></span>
-                                </a>
-                            </div>
+                    </div>
+                    <div className={"list"}>
+                        <div className={"item"}>
+                            <a href="" className={"link-parent"}>
+                                <span className={"list-text"}>Rolnictwo</span>
+                                <span><img src={cat7} alt="Rolnictwo"/></span>
+                            </a>
                         </div>
-                        <div className={"list"}>
-                            <div className={"item"}>
-                                <a href="" className={"link-parent"}>
-                                    <span className={"list-text"}>Zwierzęta</span>
-                                    <span><img src={cat8} alt="Zwierzęta"/></span>
-                                </a>
-                            </div>
+                    </div>
+                    <div className={"list"}>
+                        <div className={"item"}>
+                            <a href="" className={"link-parent"}>
+                                <span className={"list-text"}>Zwierzęta</span>
+                                <span><img src={cat8} alt="Zwierzęta"/></span>
+                            </a>
                         </div>
-                        <div className={"list"}>
-                            <div className={"item"}>
-                                <a href="" className={"link-parent"}>
-                                    <span className={"list-text"}>Dla Dzieci</span>
-                                    <span><img src={cat9} alt="Dla Dzieci"/></span>
-                                </a>
-                            </div>
+                    </div>
+                    <div className={"list"}>
+                        <div className={"item"}>
+                            <a href="" className={"link-parent"}>
+                                <span className={"list-text"}>Dla Dzieci</span>
+                                <span><img src={cat9} alt="Dla Dzieci"/></span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
-export default Categories;

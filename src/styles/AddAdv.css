@@ -118,6 +118,14 @@
     margin-top: 30px;
 }
 
+.add-adv-price{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
 .add-adv-button-add{
     margin-top: 0.2%;
     margin-bottom: 1%;

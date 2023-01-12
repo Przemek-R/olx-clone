@@ -1,8 +1,8 @@
 import React from "react"
 
-import '../styles/Categories.css';
-import cat1 from "../img/icon-cat1.png";
-import cat2 from "../img/icon-cat2.png";
+import '../styles/Categories.css'
+import cat1 from "../img/icon-cat1.png"
+import cat2 from "../img/icon-cat2.png"
 import cat3 from '../img/icon-cat3.png'
 import cat4 from '../img/icon-cat4.png'
 import cat5 from '../img/icon-cat5.png'
@@ -10,6 +10,7 @@ import cat6 from '../img/icon-cat6.png'
 import cat7 from '../img/icon-cat7.png'
 import cat8 from '../img/icon-cat8.png'
 import cat9 from '../img/icon-cat9.png'
+import maluch from '../img/maluch.jpg'
 
 export default function Categories() {
 
@@ -94,6 +95,60 @@ export default function Categories() {
                     </div>
                 </div>
             </div>
+            <div className={"categories-container-wrapper-2"}>
+                <ul>
+                    <li>
+                        <div className={"categories-container-wrapper-2-photo"}>
+                            <a href="" className={"link-parent"} >
+                                <img src={maluch} className={"img-photo"}/>
+                                <h1 className={"h1-photo"}>Maluch 126p</h1>
+                            </a>
+                            <h3 className={"h2-photo"}>Kielce</h3>
+                            <h2 className={"h3-photo"}>15 000 zł</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <p>2</p>
+                    </li>
+                    <li>
+                        <p>3</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>4</p>
+                    </li>
+                    <li>
+                        <p>5</p>
+                    </li>
+                    <li>
+                        <p>6</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>7</p>
+                    </li>
+                    <li>
+                        <p>8</p>
+                    </li>
+                    <li>
+                        <p>9</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>11</p>
+                    </li>
+                    <li>
+                        <p>12</p>
+                    </li>
+                    <li>
+                        <p>13</p>
+                    </li>
+                </ul>
+            </div>
+            <div className={"categories-container-space"} />
         </div>
     )
 }

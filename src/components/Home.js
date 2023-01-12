@@ -1,7 +1,7 @@
-import React from 'react';
-import Header from './Header';
+import React from 'react'
+import Header from './Header'
 import Footer from './Footer'
-import Categories from "./Categories";
+import Categories from "./Categories"
 
 export default function Home() {
     return (

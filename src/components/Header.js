@@ -1,8 +1,8 @@
-import React from 'react';
-import Logo2 from "../img/olx-logo2.svg";
-import { FaMapMarkerAlt, FaSearch, FaUserCircle } from 'react-icons/fa';
+import React from 'react'
+import Logo2 from "../img/olx-logo2.svg"
+import { FaMapMarkerAlt, FaSearch, FaUserCircle } from 'react-icons/fa'
 
-import '../styles/Header.css';
+import '../styles/Header.css'
 
 export default function Header() {
     return (

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import '../styles/Registration.css';
-import bcrypt from 'bcryptjs';
+import React, { useState } from 'react'
+import axios from 'axios'
+import '../styles/Registration.css'
+import bcrypt from 'bcryptjs'
 
 export default function Registration() {
     const [username, setUsername] = useState("")

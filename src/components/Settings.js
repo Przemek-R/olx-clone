@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import '../styles/Settings.css'
 
@@ -52,8 +52,7 @@ export default function Settings() {
                 <input className={"settings-input"} type={"text"}/>
                 <button className={"settings-button"}>Zapisz</button>
             </div>
-            <div className={"settings-space"}>
-            </div>
+                <div className={"settings-space"} />
         </div>
     );
 }

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import '../styles/AddAdv.css';
+import '../styles/AddAdv.css'
 
 export default function AddAdv() {
     return (
@@ -52,8 +52,7 @@ export default function AddAdv() {
                 <input className={"add-adv-input"} placeholder={"Podaj cenę przedmiotu"} type={"text"}/>
                 <button className={"add-adv-button-add"}>Dodaj ogłoszenie</button>
             </div>
-            <div className={"add-adv-space"}>
-            </div>
+            <div className={"add-adv-space"} />
         </div>
     );
 }

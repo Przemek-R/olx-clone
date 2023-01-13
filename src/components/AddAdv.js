@@ -105,10 +105,10 @@ export default function AddAdv() {
                 </select>
             </div>
             <div className={"add-adv-photo"}>
-                <h4 className={"add-adv-h4-photo"}>Zdjęcia</h4>
-                <text className={"add-adv-t"}>Dodaj zdjęcia, które przedstawiają sprzedawany przedmiot</text>
+                <h4 className={"add-adv-h4-photo"}>Zdjęcie</h4>
+                <text className={"add-adv-t"}>Dodaj zdjęcie, które przedstawia sprzedawany przedmiot</text>
                 <input type="file" onChange={handleFileChange} />
-                <img src={photo} alt="uploaded" />
+                <img src={photo} alt={""} className={"img-photo"} />
             </div>
             <div className={"add-adv-description"}>
                 <h4 className={"add-adv-h4"}>Opis</h4>
@@ -122,13 +122,13 @@ export default function AddAdv() {
             </div>
             <div className={"add-adv-localization"}>
                 <h4 className={"add-adv-h4"}>Lokalizacja</h4>
-                <h1>Miasto</h1>
+                <text className={"add-adv-t"}>Miasto</text>
                 <select>
                     {cities.map((city, index) => (
                         <option key={index}>{city.name}</option>
                     ))}
                 </select>
-                <h1>Województwo</h1>
+                <text className={"add-adv-t"}>Województwo</text>
                 <select>
                     {provincies.map((province, index) => (
                         <option key={index}>{province.name}</option>

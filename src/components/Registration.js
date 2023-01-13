@@ -78,7 +78,7 @@ export default function Registration() {
                     console.log(response);
                 })
                 .catch(error => {
-                    console.error("Błąd: " + error.message);
+                    console.error("Error: " + error.message);
                 });
         } else {
             console.error(error)

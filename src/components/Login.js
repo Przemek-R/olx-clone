@@ -26,7 +26,7 @@ export default function Login() {
             console.log(JSON.stringify(response.data));
             window.location.replace('/')
         } catch (error) {
-            console.error("Błąd: " + error.message);
+            console.error("Error: " + error.message);
         }
     }
 

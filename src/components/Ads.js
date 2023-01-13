@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import '../styles/Ads.css'
 
@@ -14,11 +14,6 @@ export default function Ads(){
                         </a>
                     </li>
                     <li className={"ads-list-elem"}>
-                        <a href="/messages" className={"ads-link"}>
-                            <span className={"ads-text"}>Wiadomości</span>
-                        </a>
-                    </li>
-                    <li className={"ads-list-elem"}>
                         <a href="/settings" className={"ads-link"}>
                             <span className={"ads-text"}>Ustawienia</span>
                         </a>
@@ -27,20 +22,6 @@ export default function Ads(){
                        <span className={"ads-text"}>Wyloguj</span>
                     </li>
                 </ul>
-            </div>
-            <div className={"ads-menu-2"}>
-                    <ul className={"ads-list"}>
-                        <li className={"ads-list-elem"}>
-                            <a href="" className={"ads-link"}>
-                                <span className={"ads-text"}>Aktywne</span>
-                            </a>
-                        </li>
-                        <li className={"ads-list-elem"}>
-                            <a href="" className={"ads-link"}>
-                                <span className={"ads-text"}>Zakończone</span>
-                            </a>
-                        </li>
-                    </ul>
             </div>
             <div className={"ads-add"}>
                 <a href={"/add-advertisement"}>

@@ -1,14 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Header from './components/Header';
-import Registration from './components/Registration';
-import Login from './components/Login';
-import Footer from "./components/Footer";
-import Categories from "./components/Categories";
-import Ads from "./components/Ads";
-import Messages from "./components/Messages";
-import Settings from "./components/Settings";
-import AddAdv from "./components/AddAdv";
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom"
+import Header from './components/Header'
+import Registration from './components/Registration'
+import Login from './components/Login'
+import Footer from "./components/Footer"
+import Categories from "./components/Categories"
+import Ads from "./components/Ads"
+import Settings from "./components/Settings"
+import AddAdv from "./components/AddAdv"
 
 export default function App() {
 
@@ -39,12 +38,6 @@ export default function App() {
           <Route path={"/ads"}>
             <Header />
             <Ads />
-            <Footer />
-          </Route>
-
-          <Route path={"/messages"}>
-            <Header />
-            <Messages />
             <Footer />
           </Route>
 

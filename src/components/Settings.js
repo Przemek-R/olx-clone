@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import '../styles/Settings.css'
 
@@ -11,11 +11,6 @@ export default function Settings() {
                     <li className={"settings-list-elem"}>
                         <a href="/ads" className={"settings-link"}>
                             <span className={"settings-text"}>Ogłoszenia</span>
-                        </a>
-                    </li>
-                    <li className={"settings-list-elem"}>
-                        <a href="/messages" className={"settings-link"}>
-                            <span className={"settings-text"}>Wiadomości</span>
                         </a>
                     </li>
                     <li className={"settings-list-elem"}>

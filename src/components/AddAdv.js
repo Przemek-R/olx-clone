@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import '../styles/AddAdv.css';
+import '../styles/AddAdv.css'
 
 export default function AddAdv() {
     return (

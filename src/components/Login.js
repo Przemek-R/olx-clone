@@ -3,9 +3,14 @@ import axios from 'axios'
 
 import '../styles/Login.css'
 
-export default function Login() {
+const Login = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+
+    if (localStorage.getItem('token')) {
+        alert("Jesteś zalogowany")
+        window.location.replace('/')
+    }
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -23,6 +28,7 @@ export default function Login() {
                     withCredentials: true
                 }
             );
+            localStorage.setItem('token', response.data.token);
             console.log(JSON.stringify(response.data));
             window.location.replace('/')
         } catch (error) {
@@ -56,3 +62,4 @@ export default function Login() {
         </div>
     );
 }
+export default Login;

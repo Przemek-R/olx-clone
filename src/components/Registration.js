@@ -4,7 +4,7 @@ import bcrypt from 'bcryptjs'
 
 import '../styles/Registration.css'
 
-export default function Registration() {
+const Registration = (props) => {
     const [username, setUsername] = useState("")
     const [surname, setSurname] = useState("")
     const [email, setEmail] = useState("")
@@ -142,3 +142,4 @@ export default function Registration() {
         </div>
     );
 }
+export default Registration;

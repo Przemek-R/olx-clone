@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../styles/Ads.css'
 
-export default function Ads(){
+const Ads = () => {
     return (
         <div className={"ads-container"}>
             <div className={"ads-menu"}>
@@ -31,3 +31,4 @@ export default function Ads(){
         </div>
     );
 }
+export default Ads;

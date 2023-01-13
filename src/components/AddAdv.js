@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import '../styles/AddAdv.css';
-import axios from "axios";
+import React, { useState, useEffect } from 'react'
+import '../styles/AddAdv.css'
+import axios from "axios"
+import withAuth from "../utils/withAuth";
 
-export default function AddAdv() {
+const AddAdv = () => {
     const [title, setTitle] = useState("")
     const [photo, setPhoto] = useState("")
     const [description, setDescription] = useState("")
@@ -204,3 +205,4 @@ export default function AddAdv() {
         </div>
     );
 }
+export default withAuth(AddAdv);

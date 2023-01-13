@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/AddAdv.css';
 import axios from "axios";
 
@@ -10,6 +10,9 @@ export default function AddAdv() {
     const [phone, setPhone] = useState("")
     const [price, setPrice] = useState("")
     const [error, setError] = useState(null)
+    const [cities, setCities] = useState([]);
+    const [provincies, setProvincies] = useState([])
+    const [categories, setCategories] = useState([]);
 
     const handleFileChange = (event) => {
         const file = event.target.files[0];
@@ -19,6 +22,43 @@ export default function AddAdv() {
             setPhoto(reader.result);
         };
     }
+
+    useEffect(() => {
+        const fetchCity = async () => {
+            try {
+                const response = await axios.get('http://localhost:3001/get-city');
+                setCities(response.data);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        fetchCity();
+    }, []);
+
+    useEffect(() => {
+        const fetchProvince = async () => {
+            try {
+                const response = await axios.get('http://localhost:3001/get-province');
+                setProvincies(response.data);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        fetchProvince();
+    }, []);
+
+    useEffect(() => {
+        const fetchCategory= async () => {
+            try {
+                const response = await axios.get('http://localhost:3001/get-category');
+                setCategories(response.data);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        fetchCategory();
+    }, []);
+
         function handleSubmit(event) {
         event.preventDefault();
 
@@ -59,16 +99,9 @@ export default function AddAdv() {
                 />
                 <text className={"add-adv-t"}>Kategoria</text>
                 <select>
-                    <option value={""}>Wybierz kategorię</option>
-                    <option value={"0"}>Motoryzacja</option>
-                    <option value={"1"}>Nieruchomości</option>
-                    <option value={"2"}>Praca</option>
-                    <option value={"3"}>Dom i Ogród</option>
-                    <option value={"4"}>Elektronika</option>
-                    <option value={"5"}>Moda</option>
-                    <option value={"6"}>Rolnictwo</option>
-                    <option value={"7"}>Zwierzęta</option>
-                    <option value={"8"}>Dla Dzieci</option>
+                    {categories.map((category, index) => (
+                        <option key={index}>{category.name}</option>
+                    ))}
                 </select>
             </div>
             <div className={"add-adv-photo"}>
@@ -89,7 +122,18 @@ export default function AddAdv() {
             </div>
             <div className={"add-adv-localization"}>
                 <h4 className={"add-adv-h4"}>Lokalizacja</h4>
-                <input className={"add-adv-input"} placeholder={"Miejscowość"} type={"text"}/>
+                <h1>Miasto</h1>
+                <select>
+                    {cities.map((city, index) => (
+                        <option key={index}>{city.name}</option>
+                    ))}
+                </select>
+                <h1>Województwo</h1>
+                <select>
+                    {provincies.map((province, index) => (
+                        <option key={index}>{province.name}</option>
+                    ))}
+                </select>
             </div>
             <div className={"add-adv-contact"}>
                 <h4 className={"add-adv-h4"}>Dane kontaktowe</h4>

@@ -9,7 +9,11 @@ export default function AddAdv() {
     const [email, setEmail] = useState("")
     const [phone, setPhone] = useState("")
     const [price, setPrice] = useState("")
-    const [error, setError] = useState(null)
+    const [city, setCity] = useState("")
+    const [province, setProvince] = useState("")
+    const [category, setCategory] = useState("")
+    const [username, setUsername] = useState("")
+
     const [cities, setCities] = useState([]);
     const [provincies, setProvincies] = useState([])
     const [categories, setCategories] = useState([]);
@@ -64,11 +68,15 @@ export default function AddAdv() {
 
             axios.post('http://localhost:3001/add-advertisement', {
                 title,
+                category,
                 photo,
                 description,
-                price,
+                city,
+                province,
                 email,
-                phone
+                username,
+                phone,
+                price,
             })
                 .then(response => {
                     alert("Pomyślnie dodano ogłoszenie!")
@@ -98,7 +106,11 @@ export default function AddAdv() {
                     required
                 />
                 <text className={"add-adv-t"}>Kategoria</text>
-                <select>
+                <select
+                    value={category}
+                    onChange={event => setCategory(event.target.value)}
+                    required
+                >
                     {categories.map((category, index) => (
                         <option key={index}>{category.name}</option>
                     ))}
@@ -123,13 +135,21 @@ export default function AddAdv() {
             <div className={"add-adv-localization"}>
                 <h4 className={"add-adv-h4"}>Lokalizacja</h4>
                 <text className={"add-adv-t"}>Miasto</text>
-                <select>
+                <select
+                    value={city}
+                    onChange={event => setCity(event.target.value)}
+                    required
+                >
                     {cities.map((city, index) => (
                         <option key={index}>{city.name}</option>
                     ))}
                 </select>
                 <text className={"add-adv-t"}>Województwo</text>
-                <select>
+                <select
+                    value={province}
+                    onChange={event => setProvince(event.target.value)}
+                    required
+                >
                     {provincies.map((province, index) => (
                         <option key={index}>{province.name}</option>
                     ))}
@@ -144,6 +164,15 @@ export default function AddAdv() {
                     type={"text"}
                     value={email}
                     onChange={event => setEmail(event.target.value)}
+                    required
+                />
+                <text className={"add-adv-t"}>Imię</text>
+                <input
+                    className={"add-adv-input"}
+                    placeholder={"Podaj swoje imię"}
+                    type={"text"}
+                    value={username}
+                    onChange={event => setUsername(event.target.value)}
                     required
                 />
                 <text className={"add-adv-t"}>Numer telefonu</text>

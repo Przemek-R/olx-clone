@@ -3,6 +3,12 @@ import React from 'react'
 import '../styles/Settings.css'
 
 export default function Settings() {
+
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        window.location.replace('/login')
+    }
+
     return (
         <div className={"settings-container"}>
             <div className={"settings-menu"}>
@@ -19,7 +25,7 @@ export default function Settings() {
                         </a>
                     </li>
                     <li className={"settings-list-elem"}>
-                        <span className={"settings-text"}>Wyloguj</span>
+                        <span className={"settings-text"}><button className={"settings-button-logout"} onClick={handleLogout}>Wyloguj</button></span>
                     </li>
                 </ul>
             </div>

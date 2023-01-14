@@ -3,6 +3,12 @@ import React from 'react'
 import '../styles/Ads.css'
 
 const Ads = () => {
+
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        window.location.replace('/login')
+    }
+
     return (
         <div className={"ads-container"}>
             <div className={"ads-menu"}>
@@ -19,7 +25,7 @@ const Ads = () => {
                         </a>
                     </li>
                     <li className={"ads-list-elem"}>
-                       <span className={"ads-text"}>Wyloguj</span>
+                        <button className={"ads-add-button-logout"} onClick={handleLogout}>Wyloguj</button>
                     </li>
                 </ul>
             </div>

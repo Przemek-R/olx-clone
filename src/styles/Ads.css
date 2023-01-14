@@ -65,6 +65,22 @@ ads-add-menu{
     width: 170px;
 }
 
+.ads-add-button-logout{
+    align-items: center;
+    cursor: pointer;
+    min-height: 40px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: rgb(0, 47, 52);
+    border: 5px solid rgb(0, 47, 52);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    width: 100px;
+}
+
 .ads-container a, .ads-container a:visited {
     outline: none;
     text-decoration: none;

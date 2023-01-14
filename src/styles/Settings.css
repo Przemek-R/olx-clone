@@ -92,6 +92,22 @@
     width: 170px;
 }
 
+.settings-button-logout{
+    align-items: center;
+    cursor: pointer;
+    min-height: 40px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: rgb(0, 47, 52);
+    border: 5px solid rgb(0, 47, 52);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    width: 100px;
+}
+
 .settings-password{
     width: 100%;
     background: rgb(255, 255, 255);

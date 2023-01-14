@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { FaMapMarkerAlt, FaSearch, FaUserCircle } from 'react-icons/fa'
 
 import '../styles/Header.css';

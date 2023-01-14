@@ -1,7 +1,6 @@
-import React, {useEffect, useState} from "react"
+import React, {useEffect, useState} from 'react'
+import axios from 'axios'
 import '../styles/AdsWindow.css'
-import axios from "axios";
-
 
 const AdsWindow = () => {
 
@@ -30,7 +29,7 @@ const AdsWindow = () => {
                 </div>
 
                 <div className={"ads-w-title"}>
-                    <h3 className={"ads-w-name"}>{item.name}</h3>
+                    <h3 className={"ads-w-name"}>{item.username}</h3>
                     <h1 className={"ads-w-small"}>sprzedający</h1>
 
                     <h2 className={"ads-w-s-title"}>Dane kontaktowe:</h2>

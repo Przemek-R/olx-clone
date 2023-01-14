@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import bcrypt from 'bcryptjs'
-
 import '../styles/Registration.css'
 
 const Registration = (props) => {

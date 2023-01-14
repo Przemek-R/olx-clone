@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from "react"
-
+import React, {useEffect, useState} from 'react'
+import axios from 'axios'
 import '../styles/Categories.css'
-import cat1 from "../img/icon-cat1.png"
-import cat2 from "../img/icon-cat2.png"
+import cat1 from '../img/icon-cat1.png'
+import cat2 from '../img/icon-cat2.png'
 import cat3 from '../img/icon-cat3.png'
 import cat4 from '../img/icon-cat4.png'
 import cat5 from '../img/icon-cat5.png'
@@ -10,7 +10,7 @@ import cat6 from '../img/icon-cat6.png'
 import cat7 from '../img/icon-cat7.png'
 import cat8 from '../img/icon-cat8.png'
 import cat9 from '../img/icon-cat9.png'
-import axios from "axios";
+
 
 export default function Categories() {
 
@@ -115,7 +115,7 @@ export default function Categories() {
                     <li>
                         <div className={"categories-container-wrapper-2-photo"}>
                             <a href="" className={"link-parent"} >
-                                <img src={item.photo} alt="photo" className={"img-photo"}/>
+                                <img src={item.photo} alt="photo" className={"categories-img-photo"}/>
                                 <h1 className={"h1-photo"}>{item.title}</h1>
                             </a>
                             <h3 className={"h2-photo"}>{item.city}</h3>

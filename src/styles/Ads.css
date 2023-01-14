@@ -86,3 +86,61 @@ ads-add-menu{
     text-decoration: none;
     color: #002f34;
 }
+
+.ads-container-wrapper {
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.ads-container-wrapper ul {
+    list-style: none;
+    display: inline-block;
+    vertical-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ads-container-wrapper li {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+}
+
+.ads-container-wrapper-photo {
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.h1-photo {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.h2-photo {
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.h3-photo {
+    font-size: 18px;
+}
+
+.ads-img-photo {
+    height: 150px;
+    width: 250px;
+}
+
+.ads-container-wrapper-photo a, .categories-container-wrapper-2-photo a:visited {
+    outline: none;
+    text-decoration: none;
+    color: #002f34;
+}

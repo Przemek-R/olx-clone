@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+import withAuth from '../utils/withAuth'
 import '../styles/AddAdv.css'
-import axios from "axios"
-import withAuth from "../utils/withAuth"
 
 const AddAdv = () => {
     const [title, setTitle] = useState("")

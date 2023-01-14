@@ -112,6 +112,7 @@ const AddAdv = () => {
                     onChange={event => setCategory(event.target.value)}
                     required
                 >
+                    <option hidden selected> Wybierz kategorię </option>
                     {categories.map((category, index) => (
                         <option key={index}>{category.name}</option>
                     ))}
@@ -141,6 +142,7 @@ const AddAdv = () => {
                     onChange={event => setCity(event.target.value)}
                     required
                 >
+                    <option hidden selected> Wybierz miasto </option>
                     {cities.map((city, index) => (
                         <option key={index}>{city.name}</option>
                     ))}
@@ -151,6 +153,8 @@ const AddAdv = () => {
                     onChange={event => setProvince(event.target.value)}
                     required
                 >
+                    <option hidden selected> Wybierz województwo </option>
+
                     {provincies.map((province, index) => (
                         <option key={index}>{province.name}</option>
                     ))}

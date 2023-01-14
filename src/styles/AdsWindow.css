@@ -1,0 +1,32 @@
+* {
+    margin:0;
+}
+
+.ads-w-container{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    min-height: 80vh;
+}
+
+.ads-w-container-2{
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 80vh;
+    display: grid;
+}
+
+.ads-w-photo{
+    padding: 0;
+    height: 20%;
+    width: 20%;
+    margin-bottom: 24px;
+    grid-column: span 4;
+    position: relative;
+}
+
+.ads-w-img {
+    height: 150px;
+    width: 250px;
+}
+
+

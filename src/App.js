@@ -1,13 +1,14 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Header from './components/Header'
 import Registration from './components/Registration'
 import Login from './components/Login'
-import Footer from "./components/Footer"
-import Categories from "./components/Categories"
-import Ads from "./components/Ads"
-import Settings from "./components/Settings"
-import AddAdv from "./components/AddAdv"
+import Footer from './components/Footer'
+import Categories from './components/Categories'
+import Ads from './components/Ads'
+import Settings from './components/Settings'
+import AddAdv from './components/AddAdv'
+import AdsWindow from './components/AdsWindow'
 
 export default function App() {
 
@@ -17,6 +18,12 @@ export default function App() {
 
           <Route path={"/login"}>
             <Login />
+          </Route>
+
+          <Route path={"/ads-window"}>
+            <Header />
+            <AdsWindow />
+            <Footer />
           </Route>
 
           <Route path={"/registration"}>

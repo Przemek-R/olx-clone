@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Settings.css';
 
-export default function Settings() {
+const Settings = () => {
 
     const handleLogout = () => {
         localStorage.removeItem('token');
@@ -58,3 +58,4 @@ export default function Settings() {
         </div>
     );
 }
+export default Settings;

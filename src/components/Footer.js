@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Footer.css';
 import logo from '../img/olx-logo.svg';
 
-export default function Footer() {
+const Footer = () => {
     return (
         <div className={"footer-container"}>
             <div className={"footer-part-1"}>
@@ -77,3 +77,4 @@ export default function Footer() {
         </div>
     )
 }
+export default Footer;

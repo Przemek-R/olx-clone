@@ -3,7 +3,7 @@ import axios from 'axios';
 import bcrypt from 'bcryptjs';
 import '../styles/Registration.css';
 
-const Registration = (props) => {
+const Registration = () => {
     const [username, setUsername] = useState("")
     const [surname, setSurname] = useState("")
     const [email, setEmail] = useState("")

@@ -12,9 +12,9 @@ import cat8 from '../img/icon-cat8.png';
 import cat9 from '../img/icon-cat9.png';
 
 
-export default function Categories() {
+const Categories = () => {
 
-    const [advertisemment, setAdvertisement] = useState([])
+    const [advertisement, setAdvertisement] = useState([])
 
     useEffect(() => {
         const fetchAdvertisement = async () => {
@@ -110,7 +110,7 @@ export default function Categories() {
                 </div>
             </div>
             <div className={"categories-container-wrapper-2"}>
-                {advertisemment.map((item, index) => (
+                {advertisement.map((item, index) => (
                     <ul>
                         <li>
                             <div className={"categories-container-wrapper-2-photo"}>
@@ -129,3 +129,5 @@ export default function Categories() {
         </div>
     )
 }
+
+export default Categories;

@@ -3,7 +3,7 @@ import {FaMapMarkerAlt, FaSearch, FaUserCircle} from 'react-icons/fa';
 import '../styles/Header.css';
 import Logo2 from '../img/olx-logo2.svg';
 
-export default function Header() {
+const Header = () => {
     return (
         <div className={"Header"}>
             <div className={"HeaderLeft"}>
@@ -51,3 +51,4 @@ export default function Header() {
         </div>
     )
 }
+export default Header;

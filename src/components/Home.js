@@ -1,19 +1,19 @@
-import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import Categories from './Categories'
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import Categories from './Categories';
 
 export default function Home() {
     return (
         <div className={"home-container"}>
             <div>
-                <Header />
+                <Header/>
             </div>
             <div>
-                <Categories />
+                <Categories/>
             </div>
             <div>
-                <Footer />
+                <Footer/>
             </div>
         </div>
     )

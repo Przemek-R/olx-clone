@@ -1,20 +1,20 @@
 * {
-    margin:0;
+    margin: 0;
 }
 
-.ads-container{
+.ads-container {
     min-height: 80vh;
     background-color: rgb(242, 244, 245);
 }
 
-.ads-menu{
+.ads-menu {
     width: 100%;
     background: rgb(255, 255, 255);
     margin: 0px auto;
     padding-top: 48px;
 }
 
-.ads-h3{
+.ads-h3 {
     line-height: 26px;
     font-size: 32px;
     font-weight: 700;
@@ -22,7 +22,7 @@
     margin: 0px 10% 30px;
 }
 
-.ads-list{
+.ads-list {
     display: flex;
     align-items: center;
     list-style: none;
@@ -33,22 +33,22 @@
     padding-left: 0;
 }
 
-.ads-list-elem{
+.ads-list-elem {
     position: relative;
     margin-right: 50px;
 }
 
-ads-add-menu{
+ads-add-menu {
     display: flex;
     align-items: center;
     text-align: center;
 }
 
-.ads-add{
+.ads-add {
     margin-left: 10%;
 }
 
-.ads-add-button{
+.ads-add-button {
     align-items: center;
     cursor: pointer;
     min-height: 40px;
@@ -65,7 +65,7 @@ ads-add-menu{
     width: 170px;
 }
 
-.ads-add-button-logout{
+.ads-add-button-logout {
     align-items: center;
     cursor: pointer;
     min-height: 40px;

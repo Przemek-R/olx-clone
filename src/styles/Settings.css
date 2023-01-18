@@ -1,19 +1,19 @@
 * {
-    margin:0;
+    margin: 0;
 }
 
-.settings-container{
+.settings-container {
     background-color: rgb(242, 244, 245);
 }
 
-.settings-menu{
+.settings-menu {
     width: 100%;
     background: rgb(255, 255, 255);
     margin: 0px auto;
     padding-top: 48px;
 }
 
-.settings-h3{
+.settings-h3 {
     line-height: 26px;
     font-size: 32px;
     font-weight: 700;
@@ -21,7 +21,7 @@
     margin: 0px 10% 30px;
 }
 
-.settings-list{
+.settings-list {
     display: flex;
     align-items: center;
     list-style: none;
@@ -32,17 +32,17 @@
     padding-left: 0;
 }
 
-.settings-list-elem{
+.settings-list-elem {
     position: relative;
     margin-right: 50px;
 }
 
-.settings-menu-2{
+.settings-menu-2 {
     width: 100%;
     align-items: center;
 }
 
-.settings-data{
+.settings-data {
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;
@@ -56,12 +56,12 @@
     font-size: 20px;
 }
 
-.settings-t{
+.settings-t {
     font-size: 14px;
     margin-left: 10%;
 }
 
-.settings-input{
+.settings-input {
     outline: 0;
     width: 300px;
     border: none;
@@ -72,7 +72,7 @@
     height: 40px;
 }
 
-.settings-button{
+.settings-button {
     margin-top: 0.2%;
     margin-bottom: 1%;
     margin-left: 10%;
@@ -92,7 +92,7 @@
     width: 170px;
 }
 
-.settings-button-logout{
+.settings-button-logout {
     align-items: center;
     cursor: pointer;
     min-height: 40px;
@@ -108,7 +108,7 @@
     width: 100px;
 }
 
-.settings-password{
+.settings-password {
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;
@@ -116,7 +116,7 @@
     margin-top: 30px;
 }
 
-.settings-email{
+.settings-email {
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;
@@ -124,7 +124,7 @@
     margin-top: 30px;
 }
 
-.settings-space{
+.settings-space {
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;

@@ -1,21 +1,22 @@
-import React, {useState} from 'react'
-import { FaMapMarkerAlt, FaSearch, FaUserCircle } from 'react-icons/fa'
-import '../styles/Header.css'
-import Logo2 from '../img/olx-logo2.svg'
+import React from 'react';
+import {FaMapMarkerAlt, FaSearch, FaUserCircle} from 'react-icons/fa';
+import '../styles/Header.css';
+import Logo2 from '../img/olx-logo2.svg';
 
 export default function Header() {
     return (
         <div className={"Header"}>
             <div className={"HeaderLeft"}>
                 <a href={"/"}>
-                <img src={Logo2} className={"Logo"}/>
+                    <img src={Logo2} className={"Logo"}/>
                 </a>
             </div>
             <div className={"HeaderCenter"}>
                 <FaSearch className={"Icon"}/>
                 <input type={"text"} placeholder={"Szukaj"} className={"CenterSearch"}/>
                 <FaMapMarkerAlt className={"Icon"}/>
-                <input list={"localization"} type={"text"} placeholder={"Lokalizacja"} className={"CenterLocalization"}/>
+                <input list={"localization"} type={"text"} placeholder={"Lokalizacja"}
+                       className={"CenterLocalization"}/>
                 <datalist id={"localization"}>
                     <option value={"Cała Polska"}></option>
                     <option value={"Dolnośląskie"}></option>
@@ -38,13 +39,13 @@ export default function Header() {
             </div>
             <div className={"HeaderRight"}>
                 <a href={"/add-advertisement"}>
-                <button className={"HeaderRightSell"}>Dodaj ogłoszenie</button>
+                    <button className={"HeaderRightSell"}>Dodaj ogłoszenie</button>
                 </a>
                 <a href={"/login"}>
-                <h4 className={"HeaderRightLogin"}>Logowanie</h4>
+                    <h4 className={"HeaderRightLogin"}>Logowanie</h4>
                 </a>
                 <a href={"/ads"}>
-                <FaUserCircle className={"User"}/>
+                    <FaUserCircle className={"User"}/>
                 </a>
             </div>
         </div>

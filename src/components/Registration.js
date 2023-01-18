@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import axios from 'axios'
-import bcrypt from 'bcryptjs'
-import '../styles/Registration.css'
+import React, {useState} from 'react';
+import axios from 'axios';
+import bcrypt from 'bcryptjs';
+import '../styles/Registration.css';
 
 const Registration = (props) => {
     const [username, setUsername] = useState("")
@@ -14,45 +14,44 @@ const Registration = (props) => {
 
     function validateForm() {
 
-            if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(email)) {
-                setError('Niepoprawny adres email');
-                return false;
-            }
+        if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(email)) {
+            setError('Niepoprawny adres email');
+            return false;
+        }
 
-            if (phone.length < 9 && phone.length > 12)
-            {
-                setError('Niepoprawny numer telefonu');
-                return false;
-            }
+        if (phone.length < 9 && phone.length > 12) {
+            setError('Niepoprawny numer telefonu');
+            return false;
+        }
 
-            if (password !== confirmPassword) {
-                setError('Hasła nie są takie same');
-                return false;
-            }
+        if (password !== confirmPassword) {
+            setError('Hasła nie są takie same');
+            return false;
+        }
 
-            if (password.length < 8) {
-                setError('Hasło musi mieć co najmniej 8 znaków');
-                return false;
-            }
+        if (password.length < 8) {
+            setError('Hasło musi mieć co najmniej 8 znaków');
+            return false;
+        }
 
-            if (!/\d/.test(password)) {
-                setError('Hasło musi zawierać co najmniej jedną cyfrę');
-                return false;
-            }
+        if (!/\d/.test(password)) {
+            setError('Hasło musi zawierać co najmniej jedną cyfrę');
+            return false;
+        }
 
-            if (!/[a-z]/.test(password)) {
-                setError('Hasło musi zawierać co najmniej jedną małą literę');
-                return false;
-            }
+        if (!/[a-z]/.test(password)) {
+            setError('Hasło musi zawierać co najmniej jedną małą literę');
+            return false;
+        }
 
-            if (!/[A-Z]/.test(password)) {
-                setError('Hasło musi zawierać co najmniej jedną dużą literę');
-                return false;
-            }
+        if (!/[A-Z]/.test(password)) {
+            setError('Hasło musi zawierać co najmniej jedną dużą literę');
+            return false;
+        }
 
-            if (!/[!@#$%^&*.]/.test(password)) {
-                setError('Hasło musi zawierać co najmniej jeden znak specjalny');
-                return false;
+        if (!/[!@#$%^&*.]/.test(password)) {
+            setError('Hasło musi zawierać co najmniej jeden znak specjalny');
+            return false;
         }
         return true;
     }
@@ -63,7 +62,7 @@ const Registration = (props) => {
 
         const hashedPassword = bcrypt.hashSync(password)
 
-        if (validateForm()){
+        if (validateForm()) {
             axios.post('http://localhost:3001/register', {
                 username,
                 surname,

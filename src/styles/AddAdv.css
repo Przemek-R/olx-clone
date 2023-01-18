@@ -1,19 +1,19 @@
 * {
-    margin:0;
+    margin: 0;
 }
 
-.add-adv-container{
+.add-adv-container {
     background-color: rgb(242, 244, 245);
 }
 
-.add-adv-menu{
+.add-adv-menu {
     width: 100%;
     background: rgb(255, 255, 255);
     margin: 0px auto;
     padding-top: 48px;
 }
 
-.add-adv-h3{
+.add-adv-h3 {
     font-size: 32px;
     font-weight: 700;
     color: rgb(0, 47, 52);
@@ -21,33 +21,33 @@
     margin: 0px 10% 30px;
 }
 
-.add-adv-data{
+.add-adv-data {
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
 }
 
-.add-adv-h4{
+.add-adv-h4 {
     margin-top: 1%;
     margin-left: 10%;
     margin-bottom: 25px;
     font-size: 20px;
 }
 
-.add-adv-h4-photo{
+.add-adv-h4-photo {
     margin-top: 1%;
     margin-left: 10%;
     margin-bottom: 3px;
     font-size: 20px;
 }
 
-.add-adv-t{
+.add-adv-t {
     font-size: 14px;
     margin-left: 10%;
 }
 
-.add-adv-input{
+.add-adv-input {
     outline: 0;
     border: none;
     color: #002f34;
@@ -58,7 +58,7 @@
     width: 300px;
 }
 
-.add-adv-data select{
+.add-adv-data select {
     outline: 0;
     border: none;
     color: #002f34;
@@ -70,7 +70,7 @@
     margin-bottom: 1%;
 }
 
-.add-adv-localization select{
+.add-adv-localization select {
     outline: 0;
     border: none;
     color: #002f34;
@@ -82,7 +82,7 @@
     margin-bottom: 1%;
 }
 
-.add-adv-photo{
+.add-adv-photo {
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;
@@ -97,12 +97,12 @@
     margin-bottom: 1%;
 }
 
-.add-adv-photo input{
+.add-adv-photo input {
     margin-left: 10%;
     margin-top: 25px;
 }
 
-.add-adv-description{
+.add-adv-description {
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;
@@ -110,7 +110,7 @@
     margin-top: 30px;
 }
 
-.add-adv-description textarea{
+.add-adv-description textarea {
     outline: 0;
     border: none;
     color: #002f34;
@@ -121,7 +121,7 @@
     height: 200px;
 }
 
-.add-adv-localization{
+.add-adv-localization {
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;
@@ -129,7 +129,7 @@
     margin-top: 30px;
 }
 
-.add-adv-contact{
+.add-adv-contact {
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;
@@ -137,7 +137,7 @@
     margin-top: 30px;
 }
 
-.add-adv-price{
+.add-adv-price {
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;
@@ -145,7 +145,7 @@
     margin-top: 30px;
 }
 
-.add-adv-button-add{
+.add-adv-button-add {
     margin-top: 0.2%;
     margin-bottom: 1%;
     margin-left: 10%;
@@ -165,7 +165,7 @@
     width: 170px;
 }
 
-.add-adv-space{
+.add-adv-space {
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;

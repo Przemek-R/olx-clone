@@ -1,32 +1,32 @@
 * {
-    margin:0;
+    margin: 0;
 }
 
-.footer-container{
+.footer-container {
     min-width: 1600px;
     diplay: block;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.footer-part-1{
+.footer-part-1 {
     background-color: #002f34;
     height: 50px;
 }
 
-.footer-part-2{
+.footer-part-2 {
     background-color: #cbf7ee;
     color: #002f34;
     text-align: center;
 }
 
-.footer-part-2-image{;
+.footer-part-2-image {;
     margin-top: 15px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-.footer-part-2-description{
+.footer-part-2-description {
     margin: auto;
     width: 50%;
     color: #002f34;
@@ -35,11 +35,11 @@
     font-size: 14px !important;
 }
 
-.footer-part-2-social-links{
+.footer-part-2-social-links {
     margin: auto;
 }
 
-.footer-part-2-social-links p{
+.footer-part-2-social-links p {
     margin-left: 25px;
     margin-bottom: 15px;
     font-size: 14px;
@@ -67,38 +67,38 @@
     background: no-repeat 50% 50%;
 }
 
-.footer-part-2-social-links ul li .icon-facebook{
+.footer-part-2-social-links ul li .icon-facebook {
     background-image: url('../img/icon-facebook.svg');
 }
 
-.footer-part-2-social-links ul li .icon-instagram{
+.footer-part-2-social-links ul li .icon-instagram {
     background-image: url('../img/icon-instagram.svg');
 }
 
-.footer-part-2-social-links ul li .icon-youtube{
+.footer-part-2-social-links ul li .icon-youtube {
     background-image: url('../img/icon-youtube.svg');
 }
 
-.footer-part-2-social-links ul li .icon-linkedin{
+.footer-part-2-social-links ul li .icon-linkedin {
     background-image: url('../img/icon-linkedin.svg');
 }
 
-.footer-part-2-social-links ul li .icon-pinterest{
+.footer-part-2-social-links ul li .icon-pinterest {
     background-image: url('../img/icon-pinterest.svg');
 }
 
-.footer-part-3{
+.footer-part-3 {
     border-top: 1px solid #7f9799;
     background-color: #f2f4f5;
 }
 
-.footer-part-3-list{
+.footer-part-3-list {
     display: flex;
     margin-top: 20px;
 
 }
 
-.footer-part-3 ul{
+.footer-part-3 ul {
     margin-left: 10%;
     margin-bottom: 20px;
     list-style: none;
@@ -107,7 +107,7 @@
     line-height: 2;
 }
 
-.footer-part-4{
+.footer-part-4 {
     background-color: #002f34;
     color: white;
     font-family: "Candara";

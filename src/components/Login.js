@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import axios from 'axios'
-import '../styles/Login.css'
+import React, {useState} from 'react';
+import axios from 'axios';
+import '../styles/Login.css';
 
 const Login = () => {
     const [email, setEmail] = useState("")
@@ -22,7 +22,7 @@ const Login = () => {
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json',
-                        'Authorization' : 'Bearer <token_here>'
+                        'Authorization': 'Bearer <token_here>'
                     },
                     withCredentials: true
                 }

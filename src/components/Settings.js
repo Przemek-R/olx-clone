@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/Settings.css'
+import React from 'react';
+import '../styles/Settings.css';
 
 export default function Settings() {
 
@@ -24,7 +24,8 @@ export default function Settings() {
                         </a>
                     </li>
                     <li className={"settings-list-elem"}>
-                        <span className={"settings-text"}><button className={"settings-button-logout"} onClick={handleLogout}>Wyloguj</button></span>
+                        <span className={"settings-text"}><button className={"settings-button-logout"}
+                                                                  onClick={handleLogout}>Wyloguj</button></span>
                     </li>
                 </ul>
             </div>

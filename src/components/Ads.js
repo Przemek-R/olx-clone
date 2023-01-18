@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react'
-import axios from 'axios'
-import '../styles/Ads.css'
+import React, {useEffect, useState} from 'react';
+import axios from 'axios';
+import '../styles/Ads.css';
 
 const Ads = () => {
 
@@ -12,7 +12,7 @@ const Ads = () => {
     const [advertisemment, setAdvertisement] = useState([])
 
     useEffect(() => {
-        const fetchAdvertisement= async () => {
+        const fetchAdvertisement = async () => {
             try {
                 const response = await axios.get('http://localhost:3001/get-advertisement');
                 setAdvertisement(response.data);
@@ -50,18 +50,18 @@ const Ads = () => {
             </div>
             <div className={"ads-container-wrapper"}>
                 {advertisemment.map((item, index) => (
-                <ul>
-                    <li>
-                        <div className={"ads-container-wrapper-photo"}>
-                            <a href="" className={"link-parent"} >
-                                <img src={item.photo} alt="photo" className={"ads-img-photo"}/>
-                                <h1 className={"h1-photo"}>{item.title}</h1>
-                            </a>
-                            <h3 className={"h2-photo"}>{item.city}</h3>
-                            <h2 className={"h3-photo"}>{item.price} zł</h2>
-                        </div>
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            <div className={"ads-container-wrapper-photo"}>
+                                <a href="" className={"link-parent"}>
+                                    <img src={item.photo} alt="photo" className={"ads-img-photo"}/>
+                                    <h1 className={"h1-photo"}>{item.title}</h1>
+                                </a>
+                                <h3 className={"h2-photo"}>{item.city}</h3>
+                                <h2 className={"h3-photo"}>{item.price} zł</h2>
+                            </div>
+                        </li>
+                    </ul>
                 ))}
             </div>
         </div>

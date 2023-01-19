@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from './components/Header';
 import Registration from './components/Registration';
@@ -9,6 +9,7 @@ import Ads from './components/Ads';
 import Settings from './components/Settings';
 import AddAdv from './components/AddAdv';
 import AdsWindow from './components/AdsWindow';
+import Results from "./components/Results";
 
 export default function App() {
 
@@ -39,6 +40,12 @@ export default function App() {
           <Route path={"/add-advertisement"}>
             <Header/>
             <AddAdv/>
+            <Footer/>
+          </Route>
+
+          <Route path={"/results"}>
+            <Header/>
+            <Results/>
             <Footer/>
           </Route>
 

@@ -11,9 +11,7 @@ import cat7 from '../img/icon-cat7.png';
 import cat8 from '../img/icon-cat8.png';
 import cat9 from '../img/icon-cat9.png';
 
-
 const Categories = () => {
-
     const [advertisement, setAdvertisement] = useState([])
 
     useEffect(() => {

@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {FaMapMarkerAlt, FaSearch, FaUserCircle} from 'react-icons/fa';
 import '../styles/Header.css';
 import Logo2 from '../img/olx-logo2.svg';
 
 const Header = () => {
+    const [searchWord, setSearchWord] = useState('');
+
+    function handleSearch(e) {
+        e.preventDefault();
+        window.location.href = `/results?word=${searchWord}`;
+    }
+
     return (
         <div className={"Header"}>
             <div className={"HeaderLeft"}>
@@ -12,8 +19,13 @@ const Header = () => {
                 </a>
             </div>
             <div className={"HeaderCenter"}>
-                <FaSearch className={"Icon"}/>
-                <input type={"text"} placeholder={"Szukaj"} className={"CenterSearch"}/>
+                <form onSubmit={handleSearch} className={"HeaderCenter-form"}>
+                    <button className={"header-button"} type={"submit"}>
+                        <FaSearch className={"Icon"}/>
+                    </button>
+                    <input type={"text"} placeholder={"Szukaj..."} className={"CenterSearch"} value={searchWord}
+                           onChange={(e) => setSearchWord(e.target.value)}/>
+                </form>
                 <FaMapMarkerAlt className={"Icon"}/>
                 <input list={"localization"} type={"text"} placeholder={"Lokalizacja"}
                        className={"CenterLocalization"}/>

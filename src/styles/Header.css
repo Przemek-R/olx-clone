@@ -83,3 +83,14 @@
     outline: none;
     text-decoration: none;
 }
+
+.header-button {
+    cursor: pointer;
+    margin: 1px;
+}
+
+.HeaderCenter-form {
+    display: flex;
+    background: white;
+    margin-right: 60%;
+}

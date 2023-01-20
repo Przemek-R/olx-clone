@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/Ads.css';
 
@@ -52,10 +53,10 @@ const Ads = () => {
                     <ul>
                         <li>
                             <div className={"ads-container-wrapper-photo"} key={ad.id}>
-                                <a href="" className={"link-parent"}>
+                                <Link to={`/ads-window/${ad.id_advertisement}`}>
                                     <img src={ad.photo} alt="photo" className={"ads-img-photo"}/>
                                     <h1 className={"h1-photo"}>{ad.title}</h1>
-                                </a>
+                                </Link>
                                 <h3 className={"h2-photo"}>{ad.city}</h3>
                                 <h2 className={"h3-photo"}>{ad.price} zł</h2>
                             </div>

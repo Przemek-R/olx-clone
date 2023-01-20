@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import '../styles/Categories.css';
 import cat1 from '../img/icon-cat1.png';
 import cat2 from '../img/icon-cat2.png';
@@ -122,10 +123,10 @@ const Categories = () => {
                     <ul>
                         <li>
                             <div className={"categories-container-wrapper-2-photo"}>
-                                <a className={"link-parent"}>
+                                <Link to={`/ads-window/${item.id_advertisement}`}>
                                     <img src={item.photo} alt="photo" className={"categories-img-photo"}/>
                                     <h1 className={"h1-photo"}>{item.title}</h1>
-                                </a>
+                                </Link>
                                 <h3 className={"h2-photo"}>{item.city}</h3>
                                 <h2 className={"h3-photo"}>{item.price} zł</h2>
                             </div>

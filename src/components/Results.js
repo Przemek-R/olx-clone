@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react'
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/Categories.css';
 
@@ -28,10 +29,10 @@ const Results = () => {
                     <ul>
                         <li>
                             <div className={"categories-container-wrapper-2-photo"} key={index}>
-                                <a href="" className={"link-parent"}>
+                                <Link to={`/ads-window/${item.id_advertisement}`}>
                                     <img src={item.photo} alt="photo" className={"categories-img-photo"}/>
                                     <h1 className={"h1-photo"}>{item.title}</h1>
-                                </a>
+                                </Link>
                                 <h3 className={"h2-photo"}>{item.city}</h3>
                                 <h2 className={"h3-photo"}>{item.price} zł</h2>
                             </div>

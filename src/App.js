@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BrowserRouter as Router, Route, Switch, useHistory} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from './components/Header';
 import Registration from './components/Registration';
 import Login from './components/Login';
@@ -22,7 +22,7 @@ export default function App() {
             <Login/>
           </Route>
 
-          <Route path={"/ads-window"}>
+          <Route path={"/ads-window/:id_advertisement"}>
             <Header/>
             <AdsWindow/>
             <Footer/>

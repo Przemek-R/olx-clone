@@ -47,31 +47,6 @@ const Footer = () => {
                 </div>
             </div>
             <div className={"footer-part-3"}>
-                <div className={"footer-part-3-list"}>
-                    <ul>
-                        <li>Motoryzacja</li>
-                        <li>Nieruchomości</li>
-                        <li>Praca</li>
-                    </ul>
-                    <ul>
-                        <li>Dom i Ogród</li>
-                        <li>Elektronika</li>
-                        <li>Moda</li>
-
-                    </ul>
-                    <ul>
-                        <li>Rolnictwo</li>
-                        <li>Zwierzęta</li>
-                        <li>Dla Dzieci</li>
-                    </ul>
-                    <ul>
-                        <li>O nas</li>
-                        <li>Kontakt</li>
-                        <li>Pomoc</li>
-                    </ul>
-                </div>
-            </div>
-            <div className={"footer-part-4"}>
                 <span>OLX clone - Przemysław Świercz & Konrad Dunal</span>
             </div>
         </div>

@@ -4,7 +4,7 @@ import '../styles/AdsWindow.css';
 
 const AdsWindow = () => {
 
-    const [advertisemment, setAdvertisement] = useState([])
+    const [advertisement, setAdvertisement] = useState([])
 
     useEffect(() => {
         const fetchAdvertisement = async () => {
@@ -21,7 +21,7 @@ const AdsWindow = () => {
 
     return (
         <div>
-            {advertisemment.map((item, index) => (
+            {advertisement.map((item, index) => (
                 <div className={"ads-w-container"}>
                     <div className={"ads-w-container-2"}>
                         <div className={"ads-w-photo"}>

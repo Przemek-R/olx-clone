@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, useHistory} from 'react-router-dom';
 import Header from './components/Header';
 import Registration from './components/Registration';
 import Login from './components/Login';
@@ -10,6 +10,7 @@ import Settings from './components/Settings';
 import AddAdv from './components/AddAdv';
 import AdsWindow from './components/AdsWindow';
 import Results from "./components/Results";
+import ResultsCategory from "./components/ResultsCategory";
 
 export default function App() {
 
@@ -46,6 +47,12 @@ export default function App() {
           <Route path={"/results"}>
             <Header/>
             <Results/>
+            <Footer/>
+          </Route>
+
+          <Route path={"/results-category"}>
+            <Header/>
+            <ResultsCategory/>
             <Footer/>
           </Route>
 

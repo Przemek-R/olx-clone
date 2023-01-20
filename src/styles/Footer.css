@@ -88,26 +88,6 @@
 }
 
 .footer-part-3 {
-    border-top: 1px solid #7f9799;
-    background-color: #f2f4f5;
-}
-
-.footer-part-3-list {
-    display: flex;
-    margin-top: 20px;
-
-}
-
-.footer-part-3 ul {
-    margin-left: 10%;
-    margin-bottom: 20px;
-    list-style: none;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 2;
-}
-
-.footer-part-4 {
     background-color: #002f34;
     color: white;
     font-family: "Candara";

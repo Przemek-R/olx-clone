@@ -2,16 +2,16 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import '../styles/Categories.css';
 
-const Results = () => {
-    const [searchWord, setSearchWord] = useState('');
+const ResultsCategory = () => {
+    const [category, setCategory] = useState('');
     const [data, setData] = useState(null);
 
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
         const word_p = params.get("word");
         if (word_p !== null) {
-            setSearchWord(word_p);
-            axios.get(`http://localhost:3001/search?q=${word_p}&caseInsensitive=true`)
+            setCategory(word_p);
+            axios.get(`http://localhost:3001/search-category?q=${word_p}&caseInsensitive=true`)
                 .then(response => {
                     setData(response.data);
                 })
@@ -43,4 +43,4 @@ const Results = () => {
         </div>
     )
 }
-export default Results;
+export default ResultsCategory;

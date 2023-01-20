@@ -10,7 +10,6 @@ const Ads = () => {
     }
 
     const [advertisemment, setAdvertisement] = useState([])
-
     useEffect(() => {
         const fetchAdvertisement = async () => {
             try {
@@ -49,16 +48,16 @@ const Ads = () => {
                 </a>
             </div>
             <div className={"ads-container-wrapper"}>
-                {advertisemment.map((item, index) => (
+                {advertisemment.map(ad => (
                     <ul>
                         <li>
-                            <div className={"ads-container-wrapper-photo"}>
+                            <div className={"ads-container-wrapper-photo"} key={ad.id}>
                                 <a href="" className={"link-parent"}>
-                                    <img src={item.photo} alt="photo" className={"ads-img-photo"}/>
-                                    <h1 className={"h1-photo"}>{item.title}</h1>
+                                    <img src={ad.photo} alt="photo" className={"ads-img-photo"}/>
+                                    <h1 className={"h1-photo"}>{ad.title}</h1>
                                 </a>
-                                <h3 className={"h2-photo"}>{item.city}</h3>
-                                <h2 className={"h3-photo"}>{item.price} zł</h2>
+                                <h3 className={"h2-photo"}>{ad.city}</h3>
+                                <h2 className={"h3-photo"}>{ad.price} zł</h2>
                             </div>
                         </li>
                     </ul>

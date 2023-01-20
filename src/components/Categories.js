@@ -10,6 +10,7 @@ import cat6 from '../img/icon-cat6.png';
 import cat7 from '../img/icon-cat7.png';
 import cat8 from '../img/icon-cat8.png';
 import cat9 from '../img/icon-cat9.png';
+import {useHistory} from "react-router-dom";
 
 const Categories = () => {
     const [advertisement, setAdvertisement] = useState([])
@@ -26,6 +27,11 @@ const Categories = () => {
         fetchAdvertisement();
     }, []);
 
+    const history = useHistory();
+    const handleClick = (category) => {
+        history.push(`/results-category?word=${category}`)
+    }
+
     return (
         <div className={"categories-container"}>
             <div className={"categories-container-wrapper"}>
@@ -35,73 +41,77 @@ const Categories = () => {
                 <div className={"categories-container-list"}>
                     <div className={"list"}>
                         <div className={"item"}>
-                            <a href="" className={"link-parent"}>
+                            <a className={"link-parent"}>
                                 <span className={"list-text"}>Motoryzacja</span>
-                                <span><img src={cat1} alt="Motoryzacja"/></span>
+                                <span><img onClick={() => handleClick("Motoryzacja")} src={cat1}
+                                           alt="Motoryzacja"/></span>
                             </a>
                         </div>
                     </div>
                     <div className={"list"}>
                         <div className={"item"}>
-                            <a href="" className={"link-parent"}>
+                            <a className={"link-parent"}>
                                 <span className={"list-text"}>Nieruchomości</span>
-                                <span><img src={cat2} alt="Nieruchomości"/></span>
+                                <span><img onClick={() => handleClick("Nieruchomości")} src={cat2} alt="Nieruchomości"/></span>
                             </a>
                         </div>
                     </div>
                     <div className={"list"}>
                         <div className={"item"}>
-                            <a href="" className={"link-parent"}>
+                            <a className={"link-parent"}>
                                 <span className={"list-text"}>Praca</span>
-                                <span><img src={cat3} alt="Praca"/></span>
+                                <span><img onClick={() => handleClick("Praca")} src={cat3} alt="Praca"/></span>
                             </a>
                         </div>
                     </div>
                     <div className={"list"}>
                         <div className={"item"}>
-                            <a href="" className={"link-parent"}>
+                            <a className={"link-parent"}>
                                 <span className={"list-text"}>Dom i Ogród</span>
-                                <span><img src={cat4} alt="Dom i Ogród"/></span>
+                                <span><img onClick={() => handleClick("Dom i Ogród")} src={cat4}
+                                           alt="Dom i Ogród"/></span>
                             </a>
                         </div>
                     </div>
                     <div className={"list"}>
                         <div className={"item"}>
-                            <a href="" className={"link-parent"}>
+                            <a className={"link-parent"}>
                                 <span className={"list-text"}>Elektronika</span>
-                                <span><img src={cat5} alt="Elektronika"/></span>
+                                <span><img onClick={() => handleClick("Elektronika")} src={cat5}
+                                           alt="Elektronika"/></span>
                             </a>
                         </div>
                     </div>
                     <div className={"list"}>
                         <div className={"item"}>
-                            <a href="" className={"link-parent"}>
+                            <a className={"link-parent"}>
                                 <span className={"list-text"}>Moda</span>
-                                <span><img src={cat6} alt="Moda"/></span>
+                                <span><img onClick={() => handleClick("Moda")} src={cat6} alt="Moda"/></span>
                             </a>
                         </div>
                     </div>
                     <div className={"list"}>
                         <div className={"item"}>
-                            <a href="" className={"link-parent"}>
+                            <a className={"link-parent"}>
                                 <span className={"list-text"}>Rolnictwo</span>
-                                <span><img src={cat7} alt="Rolnictwo"/></span>
+                                <span><img onClick={() => handleClick("Rolnictwo")} src={cat7} alt="Rolnictwo"/></span>
                             </a>
                         </div>
                     </div>
                     <div className={"list"}>
                         <div className={"item"}>
-                            <a href="" className={"link-parent"}>
+                            <a className={"link-parent"}>
                                 <span className={"list-text"}>Zwierzęta</span>
-                                <span><img src={cat8} alt="Zwierzęta"/></span>
+                                <span><img onClick={() => handleClick("Zwierzęta")} src={cat8} alt="Zwierzęta"/></span>
                             </a>
                         </div>
                     </div>
                     <div className={"list"}>
                         <div className={"item"}>
-                            <a href="" className={"link-parent"}>
+                            <a className={"link-parent"}>
                                 <span className={"list-text"}>Dla Dzieci</span>
-                                <span><img src={cat9} alt="Dla Dzieci"/></span>
+                                <span><img onClick={() => handleClick("Dla Dzieci")} src={cat9}
+                                           alt="Dla Dzieci"/></span>
                             </a>
                         </div>
                     </div>
@@ -112,7 +122,7 @@ const Categories = () => {
                     <ul>
                         <li>
                             <div className={"categories-container-wrapper-2-photo"}>
-                                <a href="" className={"link-parent"}>
+                                <a className={"link-parent"}>
                                     <img src={item.photo} alt="photo" className={"categories-img-photo"}/>
                                     <h1 className={"h1-photo"}>{item.title}</h1>
                                 </a>

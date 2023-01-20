@@ -28,6 +28,7 @@ const Login = () => {
                 }
             );
             localStorage.setItem('token', response.data.token);
+            localStorage.setItem('email', email);
             console.log(JSON.stringify(response.data));
             window.location.replace('/')
         } catch (error) {

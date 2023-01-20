@@ -5,23 +5,38 @@ import '../styles/Ads.css';
 
 const Ads = () => {
 
+    // const [advertisement, setAdvertisement] = useState([])
+    // useEffect(() => {
+    //     const fetchAdvertisement = async () => {
+    //         try {
+    //             const response = await axios.get('http://localhost:3001/get-advertisement');
+    //             setAdvertisement(response.data);
+    //         } catch (error) {
+    //             console.log(error);
+    //         }
+    //     };
+    //     fetchAdvertisement();
+    // }, []);
+
+    const [ads, setAds] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('http://localhost:3001/get-advertisement');
+                setAds(response.data);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+        if (localStorage.getItem('token')) {
+            fetchData();
+        }
+    }, []);
+
     const handleLogout = () => {
         localStorage.removeItem('token');
         window.location.replace('/login')
     }
-
-    const [advertisemment, setAdvertisement] = useState([])
-    useEffect(() => {
-        const fetchAdvertisement = async () => {
-            try {
-                const response = await axios.get('http://localhost:3001/get-advertisement');
-                setAdvertisement(response.data);
-            } catch (error) {
-                console.log(error);
-            }
-        };
-        fetchAdvertisement();
-    }, []);
 
     return (
         <div className={"ads-container"}>
@@ -49,16 +64,18 @@ const Ads = () => {
                 </a>
             </div>
             <div className={"ads-container-wrapper"}>
-                {advertisemment.map(ad => (
+                {ads
+                    .filter(item => item.email === localStorage.getItem('email') )
+                    .map((item, index) => (
                     <ul>
                         <li>
-                            <div className={"ads-container-wrapper-photo"} key={ad.id}>
-                                <Link to={`/ads-window/${ad.id_advertisement}`}>
-                                    <img src={ad.photo} alt="photo" className={"ads-img-photo"}/>
-                                    <h1 className={"h1-photo"}>{ad.title}</h1>
+                            <div key={item.email} className={"ads-container-wrapper-photo"}>
+                                <Link to={`/ads-window/${item.id_advertisement}`}>
+                                    <img src={item.photo} alt="photo" className={"ads-img-photo"}/>
+                                    <h1 className={"h1-photo"}>{item.title}</h1>
                                 </Link>
-                                <h3 className={"h2-photo"}>{ad.city}</h3>
-                                <h2 className={"h3-photo"}>{ad.price} zł</h2>
+                                <h3 className={"h2-photo"}>{item.city}</h3>
+                                <h2 className={"h3-photo"}>{item.price} zł</h2>
                             </div>
                         </li>
                     </ul>

@@ -12,7 +12,7 @@ const ResultsCategory = () => {
         const word_p = params.get("word");
         if (word_p !== null) {
             setCategory(word_p);
-            axios.get(`http://localhost:3001/search-category?q=${word_p}&caseInsensitive=true`)
+            axios.get(`http://localhost:3001/search-category?q=${word_p}`)
                 .then(response => {
                     setData(response.data);
                 })

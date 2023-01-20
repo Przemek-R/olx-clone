@@ -12,7 +12,7 @@ const Results = () => {
         const word_p = params.get("word");
         if (word_p !== null) {
             setSearchWord(word_p);
-            axios.get(`http://localhost:3001/search?q=${word_p}&caseInsensitive=true`)
+            axios.get(`http://localhost:3001/search?q=${word_p}`)
                 .then(response => {
                     setData(response.data);
                 })
